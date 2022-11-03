@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tous les utilisateurs{% endblock %}
+
+{% block body %}
+
+<div class="container mt-4">
+
+    <h1 class="text-center rF">Tous les membres</h1>
+
+
+    <table class="table tab">
+        <thead class="tab">
+            <tr class="tab">
+                <th>ID</th>
+                <th>Email</th>      
+                <th>Utilisateur</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Profil</th>
+            </tr>
+        </thead>
+        <tbody class="tab">
+        {% for user in users %}
+            <tr class="tab">
+                <td class="rFb">{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+                <td>
+                    <a href="{{ path('admin_user_show', {'id': user.id}) }}"><i class="bi bi-eye-fill me-2"></i></a>
+                    <a href="{{ path('admin_user_edit', {'id': user.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                </td>
+
+                {% for profile in profiles %}
+                        
+                        {% if profile.user.id == user.id %}
+                        
+                        <td>{{ profile.lastName }}</td>                       
+                        <td>{{ profile.firstName }}</td>     
+                        <td>
+                            <a href="{{ path('admin_profile_show', {'id': profile.id}) }}"><i class="bi bi-eye-fill me-2"></i></a>
+                            <a href="{{ path('admin_profile_edit', {'id': profile.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                        </td>      
+                        {% endif %}
+
+                {% endfor %}
+            </tr>
+
+        {% else %}
+            <tr>
+                <td colspan="6">Aucun résultat</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="row justify-content-center">
+        <a href="{{ path('admin_dashboard') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5">Dashboard</a>
+    </div>
+    
+</div>
+
+{% endblock %}

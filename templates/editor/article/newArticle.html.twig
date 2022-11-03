@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Article{% endblock %}
+
+{% block body %}
+<div class="container">
+
+    <h1 class="text-center mt-3 rF">Ajouter un article</h1>
+
+    {{ include('editor/article/formArticle.html.twig') }}
+
+</div>
+{% endblock %}

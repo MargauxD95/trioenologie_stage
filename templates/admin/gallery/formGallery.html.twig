@@ -1,0 +1,58 @@
+<section class="mt-3 col-md-10  mx-auto">
+    {{ form_start(formGallery) }}
+    <div class="row rFb">
+        <div class="col-10 mt-2 mx-auto">{{ form_row(formGallery.name)}}</div>
+        <div class="col-4 mt-2 mx-auto">{{ form_row(formGallery.isVisible)}}</div>
+        <div class="col-10 mt-2 mx-auto">{{ form_row(formGallery.description)}}</div>
+    </div>
+
+    {# On vérifie si la route est 'edit' #}
+    {% if app.request.attributes.get('_route') == 'admin_gallery_edit' %}
+    <div class="row rFb">
+            
+        <div class="col-10 mt-2 mb-4 border rounded pt-2 mx-auto" id="illustrations">
+            <div class="mb-3">
+                <h2 class="mb-3 rF rFb">Images de la galerie n° {{gallery.id}}</h2>
+                <section class="row ">
+                    {% for picture in gallery.pictures %}
+                    
+                    <div class="pics col text-center">
+                            <img class="shadow-sm p-3 mb-2 bg-body rounded" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="120px"><br> 
+                            <a class="btn ms-2 mb-3 btn-reset" href="{{ path('admin_gallery_unlinkPicture', {gallery_id: gallery.id ,id: picture.id}) }}" >Détacher</a>
+                    </div>
+                            
+                    {% endfor %}
+                </section> 
+            </div>
+        </div>
+            
+    </div>
+    {% endif %}
+
+
+
+        <div class="row justify-content-center">
+            <div class="col-5 mt-2 ">{{ form_row(formGallery.pictures)}}</div>
+            <div class="col-5 mt-2" id="previewUpload"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-5 mt-2">{{ form_row(formGallery.savedPictures)}}</div>
+            <div class="col-5 mt-2" id="previewSaved"></div>
+        </div>
+    
+    </div>
+    
+
+    <div class="row justify-content-center">
+        <a href="{{ path('admin_gallery_index') }}" class="btn btn-return col-2 me-2">Retour</a>
+        <button class="btn btn-submitForm col-2 ms-2">{{ button_label|default('Valider') }}</button>
+    </div>
+
+    {{ form_end(formGallery) }}
+</section>
+
+
+
+   
+    
+

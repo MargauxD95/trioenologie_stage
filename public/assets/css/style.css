@@ -1,0 +1,789 @@
+/* BODY */
+
+/* Redimension de la div container */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+/* Marges des div class ROW (scroll côté) */
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0!important;
+}
+
+.container {
+    /* margin-top: 86px; */
+    /* padding-bottom: 100px; */
+    min-height: 90vh;
+}
+
+/* FIN BODY */
+
+/* BARRE DE NAVIGATION */
+
+/* Background barre de navigation */
+.navbar{
+    background-color: #f8c7cc;
+}
+
+/* Modification liens barre de navigation */
+.navbar a {
+    font-family: 'Square Peg';
+    font-size: 2rem;
+    color: #7b0539 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Taille image navbar brand */
+
+.navbar a img.imgNav{
+    margin-left: 2rem;
+    width:10.5rem;
+}
+
+/* Liste éléments centre nav */
+#ul1{
+     margin-left: auto; 
+     margin-right:auto
+}
+
+/* Taille logo utilisateur connecté */
+
+.navbar a img.imgUser{
+    padding-left: 0.5rem;
+    width: 2.5rem;
+}
+
+/* TOGGLER ICON NAVBAR */
+
+.navbar-toggler{
+    margin-right: 2.5rem;
+    color: #7b0539 ;
+    border: rgb(123, 5, 57) solid;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(123, 5, 57)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+}
+
+/* Menu de droite */
+
+
+/* FIN NAVBAR */
+
+/* Police des elements div */
+
+/* CLASSES POLICE SQUARE PEG */
+
+.sP {
+    font-family: 'Square Peg';
+}
+
+h1.sP {
+    font-family: 'Square Peg';
+    font-size: 4.5rem;
+}
+
+.sPb {
+    font-family: 'Square Peg';
+    font-weight: bold;
+}
+
+h2.sP {
+    font-family: 'Square Peg';
+    font-size: 3.5rem;
+}
+
+h3.sP {
+    font-family: 'Square Peg';
+    font-size: 2.8rem;
+}
+
+/* FIN CLASSES POLICE SQUARE PEG */
+
+/* CLASSES ROBOTO FLEX */
+
+.rF {
+    font-family: 'Roboto Flex';
+    font-size: 1.05rem;
+}
+
+.rFb {
+    font-family: 'Roboto Flex';
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.rFi {
+    font-family: 'Roboto Flex';
+    font-style: italic;
+}
+
+h1.rF {
+    font-family: 'Roboto Flex';
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+h2.rFb {
+    font-family: 'Roboto Flex';
+    font-size: 19px;
+    font-weight: bold;
+}
+
+div {
+    font-family: 'Roboto Flex';
+    font-size: 19px;
+}
+
+/* FIN ROBOTO FLEX */
+
+/* PAGE D'ACCUEIL */
+
+/* Modification bannière page d'accueil */
+#banniere{
+    aspect-ratio: 30/9;
+    object-fit: contain;
+    
+}
+
+/* Police titre page d'accueil */
+.titre {
+    font-family: 'Bondi Sans DEMO Rough';
+    font-size: 6rem;
+    color: #7b0539;}
+
+/* FIN PAGE D'ACCUEIL */
+
+/* CALENDRIER */
+
+/* Taille calendrier */
+
+#calendar-holder{    
+    margin-top: 3rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#calendar{
+    padding-top: 3rem;
+    margin-bottom: 40px;
+}
+
+/* Redimension du calendrier utilisateurs */
+
+#calendar {
+    margin-top: 90px;
+    padding-bottom: 100px;
+    min-height: 90%;
+}
+/* Légende couleurs évènements */
+
+h2.colorsCalendar {
+    font-family: 'Roboto Flex';
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50%;
+}
+
+.colorsCalendarRose{
+    background-color: #eea1aa;
+}
+.colorsCalendarSaumon{
+    background-color: #f1a38d;
+}
+.colorsCalendarBordeaux{
+    background-color: #7b0539;
+}
+
+/* Carré current day */
+
+td.fc-today{
+    background-color: rgba(241, 163, 141, 0.3) !important;
+}
+
+td.fc-day-top.fc-mon.fc-today {
+    background-color: rgba(241, 163, 141, 0) !important;
+
+}
+
+/* Boutons */
+.fc-button-primary{
+    background-color: #7b0539 !important;
+}
+
+/* FIN CALENDRIER */
+
+/* BOUTONS NAVIGATION */
+
+.btn-primary {
+    color: white !important;
+    background-color: black;
+    border-color: black;
+}
+
+.btn-return {
+    border: rgb(238, 161, 170);
+    background-color: rgba(238, 161, 170, 0.6) ;
+    color: white;
+}
+
+.btn-return:hover {    
+    color: white;
+    background-color: #eea1aa;
+}
+
+.btn-update{
+    border: #7b073d;
+    background-color: #7b073d;
+    color: white;
+}
+
+.btn-update:hover{
+    color: white;
+    background-color: #550729;
+}
+
+.btn-delete{
+    background-color: rgba(218, 29, 83, 0.4);
+    color: white;    
+}
+
+.btn-delete:hover{
+    background-color: rgba(191, 25, 72, 0.9);
+    color: white;
+}
+
+.btn-submitForm{
+    color: white;
+    background-color: rgba(71, 120, 71, 0.663);
+}
+
+.btn-submitForm:hover{
+    color: white;
+    background-color: rgba(59, 99, 59, 0.663);
+}
+
+.btn-outline-warning:hover{
+    background-color: #f1a38d;
+    border-color: #f1a38d;
+    color: white;
+}
+
+.btn-outline-warning{
+    background-color: rgba(241, 163, 141, 0.550);
+    border: 0px;
+    color: white;
+}
+
+.btn-reset{
+    background-color: rgba(188, 0, 82, 0.550);
+    color: white;
+    border: 0px;
+}
+
+.btn-reset:hover{
+    background-color: #750737;
+    color: white;
+    border: 0px;
+}
+
+.btn-contact {
+    color: white;
+    background-color: #7b073d;
+    border: none;
+}
+
+.btn-contact:hover {
+    color: white;
+    background-color: rgba(123, 5, 57, 0.8);
+    border-color:rgba(123, 5, 57, 0.8);
+}
+
+.btn-warning {
+    --bs-btn-color: #000;
+    --bs-btn-bg: rgba(188, 0, 82, 0.550);
+    --bs-btn-border-color: rgba(188, 0, 82, 0.550);
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: rgba(188, 0, 82, 0.550);
+    --bs-btn-hover-border-color: rgba(188, 0, 82, 0.550);
+    --bs-btn-focus-shadow-rgb: 217,164,6;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: rgba(188, 0, 82, 0.550);
+    --bs-btn-active-border-color: rgba(188, 0, 82, 0.550);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: rgba(188, 0, 82, 0.550);
+    --bs-btn-disabled-border-color: rgba(188, 0, 82, 0.550);
+}
+
+/* FIN BOUTONS NAV */
+
+/* DASHBOARD */
+
+/* Boutons dashboard */
+
+.btns{
+    margin: 0.3rem;
+    width: 25rem;
+    height: 7.5rem;
+    line-height: 7.5rem;
+}
+
+.btn-article{
+    background-color: #550729;
+    color: white;
+}
+.btn-article:hover{
+    background-color: rgba(85, 7, 41, 0.8);
+    color: white;
+    border: none;
+}
+.btn-galerie{
+    background-color: #7b073d;
+    color: white;
+}
+.btn-galerie:hover{
+    background-color: rgba(123, 5, 57, 0.8);
+    color: white;
+    border: none;
+}
+.btn-evenements{
+    background-color: #bc0052;
+    color: white;
+}
+.btn-evenements:hover{
+    background-color: rgba(188, 0, 82, 0.8);
+    color: white;
+    border: none;
+}
+.btn-categories{
+    background-color: #eea1aa;
+    color:white;
+}
+.btn-categories:hover{
+    background-color: rgba(238, 161, 170, 0.8);
+    color: white;
+    border:none;
+}
+.btn-users{
+    background-color:rgb(209, 142, 149);
+    color: white;
+}
+.btn-users:hover{
+    background-color: rgba(209, 142, 149, 0.8);
+    color: white;
+    border: none;
+}
+.btn-carousel{
+    background-color: rgb(252, 226, 167);
+    color: white;
+}
+.btn-carousel:hover{
+    background-color: rgba(252, 226, 167, 0.8);
+    color: white;
+    border: none;
+}
+/* Tableaux INDEX */
+
+table.tab {
+    margin-top: 1rem !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+}
+
+tbody.tab {
+    text-align: center;
+}
+
+thead.tab {
+    background-color: #7b0539;
+    color: white;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+th.tab {
+    background-color:#da1d53;
+    color: white;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+tr.tab {
+    vertical-align: middle !important;
+}
+
+tbody.tab tr:hover {
+    background-color: rgba(134, 24, 55, 0.232);
+}
+
+tbody.tab td:hover {
+    background-color: rgba(115, 19, 46, 0.232);
+}
+
+i.bi {
+    color: #550729;
+    font-size: 1.6rem;
+}
+
+i.bi-pencil {
+    color: #eea1aa;
+}
+
+/* FIN TABLEAUX INDEX */
+
+/* Tableaux SHOW */
+
+td.rF {
+    font-family: 'Roboto Flex';
+    font-size: 1rem;
+}
+
+.table {
+    --bs-table-striped-bg: rgba(134, 24, 55, 0.232);
+}
+
+/* PROFIL */
+
+/* Titres */
+h1.profil, h2.profil{
+    font-family: 'Reenie Beanie';
+    font-size: 4rem !important;
+}
+
+/* Contenu du profil */
+.profilContent{
+    font-family: 'Reenie Beanie';
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.profileInfos{
+    font-family: 'Roboto Flex';
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* FIN PROFIL */
+
+/* ARTICLES */
+
+.articles{
+    margin-top: 30px;
+}
+
+.articles .article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: rgba(246, 184, 191, 0.3);
+    border-radius: 5px;
+}
+
+.articles .article .left img{
+    border-radius: 5%;
+    height: 400px;
+    padding: 16px;
+}
+
+.articles .article .right{
+    max-width: 50%;
+    margin-top: 1rem;
+    margin-left: 40px;
+}
+
+.articles .article .right p.date{
+    font-family: 'Roboto Flex';
+    font-weight: 100;
+    font-size: 15px;
+    color: #2c2b2b;
+}
+
+.articles .article .right p.intro{
+    font-family: 'Roboto Flex';
+    font-weight: 200;
+    color: #2d2d2d;
+}
+
+.articles .article .right p.content{
+    font-family: 'Roboto Flex';
+    font-weight: 300;
+    color: #2d2d2d;
+}
+
+.articles .article .right p.author{
+    font-family: 'Roboto Flex';
+    font-weight: 200;
+    font-size: 15.5px;
+    color: #171717;
+}
+/* FIN ARTICLES */
+
+/* GALERIES PHOTOS */
+
+#galerie{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(209, 142, 149, 0.8);
+    border-radius: 12.5px;
+}
+
+#galerie a{
+    font-family: 'Roboto Flex';
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: 200;
+    color: #000;
+    text-decoration: none;
+}
+
+#galerie a:hover{
+    font-family: 'Roboto Flex';
+    font-weight: bold;
+    font-size: 25px;
+    font-weight: 200;
+    color: #7b0539;
+}
+
+/* SHOW GALERIE PHOTO */
+
+#gallery{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.galleryDetails{
+    background-color: rgba(209, 142, 149, 0.65);
+    border-radius: 12.5px;
+}
+
+.galleryDetails p, h1{
+    text-align: center;
+}
+
+.galleryDetails h1{
+    font-family: 'Square Peg';
+    font-size: 55px;
+}
+
+.galleryPict img{
+    max-height: 200px;
+}
+
+.galleryDetails p.createdAt {
+    color: rgb(48, 46, 46);
+    font-family: 'Roboto Flex';
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.galleryDetails p.galleryDesc{
+    font-family: 'Roboto Flex';
+    font-weight: 200;
+    font-size: 18.5px;
+}
+/* FIN GALERIE PHOTO */
+
+/* FOOTER */
+
+.footerLink{
+    font-family: 'Square Peg';
+    font-size: 2rem;
+}
+
+footer { 
+    width: 100%; 
+    background-color: #f8c7cc; 
+    font-family: 'Square Peg';
+    font-size: 1.4rem;
+    color: #eea1aa !important;
+    margin: 0;
+}
+
+#footerNav a {
+    font-family: 'Square Peg';
+    font-size: 2rem;
+    text-decoration: none;
+    color: #7b0539 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+#footerBrand{
+    color: #7b0539;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Roboto Flex' sans-serif;
+}
+
+img.imgFooter{
+    width:10.5rem;
+}
+
+i.bi-facebook {
+    color: #7b0539;
+    font-size: 2rem;
+}
+
+/* FIN FOOTER */
+
+/* RETOUR EN HAUT DE LA PAGE  */
+
+#scroll_to_top {
+    position: fixed;
+    width: 35px;
+    height: 0px;
+    bottom: 250px;
+    right: 30px;
+  }
+
+  #scroll_to_top img {
+    width: 35px;
+  }
+
+
+/* FORMULAIRES */
+
+/* Formulaire connexion */
+
+.form-signin{
+    padding: 15px;
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+/* Input form category */
+
+.form-control-color {
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem;
+}
+
+#eventShow{
+    border-radius: 25px;
+    background-color: rgba(209, 142, 149, 0.3);
+}
+
+#eventDate{
+    /* border: solid; */
+}
+
+img#banniere{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+}
+
+/* PAGE FORMULAIRE DE CONTACT */
+
+#contactBg {
+    background-color: rgba(246, 184, 191, 0.3);
+}
+
+.contact {    
+    margin-top: 30px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    background-color: rgba(246, 184, 191, 0.5);
+    border-radius: 15px;
+    padding-top: 0.5rem;
+    margin-right: 4.8rem;
+    margin-left: 4.8rem;
+}
+.contact h2{
+    text-align: center;
+    font-family: 'Roboto Flex';
+    font-size: 2rem;
+    font-weight: 200;
+    font-weight: bold;
+}
+
+button.btn-contact {
+    color: white;
+    background-color: #7b073d;
+    border: none;
+    justify-content: center;
+}
+
+button.btn-contact:hover {
+    color: white;
+    background-color: rgba(123, 5, 57, 0.8);
+    border-color:rgba(123, 5, 57, 0.8);
+}
+
+/* FIN FORMULAIRE CONTACT */
+
+/* cbody : classe qui permet de fixer la hauteur du container principal sous body
+ permet d'avoir des pages avec une hauteur imposée meme si peu de contenu */
+/* .cbody{min-height: 680px !important;} */
+
+/* taille des images en preview (uploaded et saved) */
+#previewUpload img{height:100px;}
+
+#previewSaved img{height:100px;}
+
+/* titre des galeries dans galeries.html.twig */
+/* .titleHeader{background-color: rgba(134, 24, 55, 0.232);}
+.titleHeader h1{display: inline-flex;} */
+
+/* Trioenologie sur home page */
+h1 span.sP{ font-size: 4rem;}
+
+/* Carousels */
+
+.carouselHome {
+    aspect-ratio: 19/9;
+    object-fit: cover;
+    height: 580px;
+}
+
+#carouselArticle {
+    width: 400px;
+    max-height:200px;
+    background: #da1d53;
+}
+
+ #carouselArticle .carousel-item img {
+    min-width:400px;
+}
+
+/* SIGN IN */
+
+#signIn{
+    background-color: rgba(248, 199, 204, 0.25);
+    border-color: rgba(248, 199, 204, 0.25);
+    border-radius: 10px;
+}
+
+#signIn hr{
+    color: #550729;
+}
+
+.card{border: none;}
+
+#signIn .btn-return{
+    background-color: #B10F59;
+}
+
+#signIn .btn-return:hover{
+    background-color: rgba(177, 15, 89, 0.8);
+}

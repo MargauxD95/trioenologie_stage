@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Images{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1 class="text-center rF">Toutes les images</h1>
+
+    <a href="{{ path('admin_picture_newOne') }}" class="btn btn-submitForm col-sm-3 mt-3">Ajouter une seule image</a>
+    <a href="{{ path('admin_picture_newMulti') }}" class="btn btn-submitForm col-sm-3 mt-3">Ajouter plusieurs images</a>
+
+    <table class="table tab">
+        <thead class="tab">
+            <tr class="tab">
+                <th>ID</th>
+                <th>Titre</th>
+                <th>Image</th>
+                <th>Détails</th>
+                <th>Modifier</th>
+            </tr>
+        </thead>
+        <tbody class="tab">
+        {% for picture in pictures %}
+            <tr class="tab">
+                <td class="rFb">{{ picture.id }}</td>
+                <td>{{ picture.title }}</td>
+                <td class="col-4"><img class="shadow-sm p-3 bg-body rounded" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="120px"></td>
+                <td><a href="{{ path('admin_picture_show', {'id': picture.id}) }}"><i class="bi bi-eye-fill"></i></a></td>
+                <td><a href="{{ path('admin_picture_edit', {'id': picture.id}) }}"><i class="bi bi-pencil-square"></i></a></td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">Aucune image enregistrée.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="row justify-content-center">
+        <a href="{{ path('admin_dashboard') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5">Tableau de bord</a>
+    </div>
+</div>
+{% endblock %}

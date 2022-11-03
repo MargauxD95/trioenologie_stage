@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier le statut{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 class="text-center mt-4 rF">Modifier le statut: {{status.name}}</h1>
+
+    {{ include('admin/status/formStatus.html.twig', {'button_label': 'Mettre à jour'}) }}
+
+    <br>
+
+    {{ include('admin/status/deleteStatus.html.twig') }}
+
+</div>
+{% endblock %}

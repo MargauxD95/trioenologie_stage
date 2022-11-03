@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Galeries{% endblock %}
+
+{% block body %}
+
+    <div class="container mt-4">
+        <h1 class="text-center rF">Toutes les Galeries</h1>
+        <a class="btn btn-submitForm col-sm-2 mt-3" href="{{ path('admin_gallery_new') }}">Créer une nouvelle Galerie</a>
+
+    <table class="table tab">
+        <thead class="tab">
+            <tr class="tab">
+                <th>Id</th>
+                <th>Name</th>                
+                <th>Description</th>
+                <th>Composée de</th>
+                <th>Créée le</th>
+                <th>IsVisible</th>
+                <th>Détails</th>
+                <th>Modifier</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for gallery in galleries %}
+            <tr class="tab">
+                <td class="rFb">{{ gallery.id }}</td>
+                <td>{{ gallery.name }}</td> 
+                <td>{{ gallery.description }}</td>  
+                <td class="text-center">
+                    {% if gallery.pictures.count >1 %}                    
+                        {{gallery.pictures.count}} photos
+                    {% else %}
+                        {{gallery.pictures.count}} photo
+                    {% endif %}
+                </td>
+                <td class="text-center">{{ gallery.createdAt ? gallery.createdAt|date('d-m-Y H:i') : '' }}</td>
+                <td class="text-center">{{ gallery.isVisible ? 'Oui' : 'Non' }}</td>                
+                <td class="text-center">
+                    <a href="{{ path('admin_gallery_show', {'id': gallery.id}) }}"><i class="bi bi-eye-fill"></i></a>
+                </td>
+                <td class="text-center">
+                     <a href="{{ path('admin_gallery_edit', {'id': gallery.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+     
+     <div class="row justify-content-center">
+        <a href="{{ path('admin_dashboard') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5">Dashboard</a>
+    </div>
+    </div>
+    
+
+   
+{% endblock %}

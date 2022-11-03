@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Gallery index{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1 class="text-center rF">Galerie photo</h1>
+
+    <a href="{{ path('editor_gallery_new') }}" class="btn btn-submitForm col-sm-2 mt-3">Ajouter une image</a>
+
+    <table class="table tab">
+        <thead class="tab">
+            <tr class="tab">
+                <th>ID</th>
+                <th>Titre</th>
+                <th>Image</th>
+                <th>Détails</th>
+                <th>Modifier</th>
+            </tr>
+        </thead>
+        <tbody class="tab">
+        {% for gallery in galleries %}
+            <tr class="tab">
+                <td class="rFb">{{ gallery.id }}</td>
+                <td>{{ gallery.imgTitle }}</td>
+                <td>                
+                {% for picture in gallery.pictures %}
+                    <img class="shadow-sm p-3 bg-body rounded" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="200px">     
+                {% endfor %}             
+                </td>
+                <td>
+                    <a href="{{ path('editor_gallery_show', {'id': gallery.id}) }}"><i class="bi bi-eye-fill"></i></a>
+                </td>
+                <td>
+                    <a href="{{ path('editor_gallery_edit', {'id': gallery.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">Aucun résultat.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="row justify-content-center">
+        <a href="{{ path('editor_dashboard') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5">Dashboard</a>
+    </div>
+
+</div>
+{% endblock %}

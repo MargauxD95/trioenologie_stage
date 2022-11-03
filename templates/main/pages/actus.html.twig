@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Actualités de l'association Trioenologie{% endblock %}
+
+{% block body %}
+  <div class="container">
+  <h1 class="text-center sP mt-4">Nos dernières actualités</h1>
+  {% for article in articles %}
+    <section class="articles shadow">
+      <div class="article">
+    
+        <div class="left">
+          {% for picture in article.pictures %}
+          <img src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" alt="{{picture.altText}}">
+          {% endfor %}
+        </div> <!--Fin de la div class left-->
+
+        <div class="right">
+          <p class="date">Publié le {{ article.createdAt|date('d-m-Y') }}</p>
+          <h2>{{article.title}}</h1>
+          <p class="intro">{{article.intro}}</p>
+          <p class="content">{{article.content}}</p>
+          {% if article.author %}
+            <p class="author">{{ article.author }}</p>   
+          {% else %}
+            <p class="author">©️ Trioenologie</p>
+          {% endif %}
+        </div> <!--Fin de la div class right-->
+
+      </div> <!--Fin de la div class articles-->
+
+    </section> <!--Fin de la section class articles-->
+  {% endfor %}
+
+    <div class="row justify-content-center">    
+      <a href="{{ path('home') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 mt-5 mb-5">Retour à l'accueil</a>
+    </div>
+
+    <div id="scroll_to_top">
+      <a href="#top"><img src="/assets/imagesTrioenologie/f-haut.png" alt="Retourner en haut de la page" /></a>
+    </div>    
+
+  </div> <!--Fin de la div container-->
+
+{% endblock %}
+
+

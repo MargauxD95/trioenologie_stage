@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Galeries photos Trioenologie{% endblock %}
+
+{% block body %}
+<div class="container col-lg-8 col-md-8 col-sm-6 mt-5">
+    <h1 class="text-center sP mb-3">Galeries photos</h1>
+    {% for gallery in galleries %}
+        <div class="col-lg-12 col-md-8 col-sm-6 mt-5 text-center mx-auto shadow" id="galerie">
+            <h2 class="text-center mb-3"><a href="{{ path('show_gallery', {'id': gallery.id}) }}" id="showGallery">{{gallery.name}}</a></h2>
+            {% for picture in gallery.pictures %}
+                <a href="{{ path('show_gallery', {'id': gallery.id}) }}" id="showGallery"><img class="shadow-sm p-3 bg-body rounded mb-2" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="100px" alt="{{picture.altText}}"></a>
+            {% endfor %} 
+        </div>
+    {% endfor %}
+
+    <div class="row justify-content-center">    
+      <a href="{{ path('home') }}" class="btn btn-lg btn-return shadow col-lg-3 col-md-3 mt-5 mb-4">Retour à l'accueil</a>
+    </div>
+
+    <div id="scroll_to_top">
+      <a href="#top"><img src="/assets/imagesTrioenologie/f-haut.png" alt="Retourner en haut de la page" /></a>
+    </div>    
+</div>
+
+{% endblock %}

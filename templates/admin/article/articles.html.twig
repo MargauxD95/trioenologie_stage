@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des Articles {% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1 class="text-center rF">Tous les articles</h1>
+
+    <a href="{{ path('admin_article_new') }}" class="btn btn-submitForm col-sm-2 mt-3">Ecrire un nouvel article</a>
+
+    <table class="table tab">
+        <thead class="tab">
+            <tr class="tab">
+                <th>ID</th>
+                <th>Titre</th>
+                <th>Intro</th>
+                <th>Images</th>
+                <th>Détails</th>
+                <th>Modifier</th>
+            </tr>
+        </thead>
+        <tbody class="tab">
+        {% for article in articles %}
+            <tr class="tab">
+                <td class="rFb">{{ article.id }}</td>
+                <td>{{ article.title }}</td>
+                <td>{{ article.intro }}</td>
+                <td class="col-4">
+                {% if article.pictures|length > 2 %}
+                    {{ article.pictures|length }} photos
+                {% else %}
+                     {% for picture in article.pictures %}
+                        <img class="shadow-sm p-3 bg-body rounded mt-2 mb-2" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="120px">     
+                    {% endfor %}
+                {% endif %}
+                
+               
+                </td>
+                <td>
+                    <a href="{{ path('admin_article_show', {'id': article.id}) }}"><i class="bi bi-eye-fill"></i></a>
+                </td>
+                <td>                
+                    <a href="{{ path('admin_article_edit', {'id': article.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">Aucun résultat.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="row justify-content-center">
+        <a href="{{ path('admin_dashboard') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5">Tableau de bord</a>
+    </div>
+</div>
+{% endblock %}

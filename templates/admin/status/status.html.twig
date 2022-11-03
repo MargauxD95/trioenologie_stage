@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Statuts des membres{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+
+    <h1 class="text-center rF">Statuts des membres</h1>
+
+    <a href="{{ path('admin_status_new') }}" class="btn btn-submitForm col-sm-2 mt-3">Nouveau statut</a>
+
+    <table class="table tab">
+        <thead class="tab">
+            <tr class="tab">
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Détails</th>
+                <th>Modifier</th>
+            </tr>
+        </thead>
+        <tbody class="tab">
+        {% for status in statuses %}
+            <tr class="tab">
+                <td class="rFb">{{ status.id }}</td>
+                <td>{{ status.name }}</td>
+                <td>
+                    <a href="{{ path('admin_status_show', {'id': status.id}) }}"><i class="bi bi-eye-fill"></i></a>
+                </td>
+                <td>
+                    <a href="{{ path('admin_status_edit', {'id': status.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">Aucun résultat.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="row justify-content-center">
+        <a href="{{ path('admin_dashboard') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5">Dashboard</a>
+    </div>
+
+</div>
+{% endblock %}

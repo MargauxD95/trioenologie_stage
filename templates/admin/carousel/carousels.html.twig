@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Carousel index{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    
+    <h1 class="text-center rF">Carousels</h1>
+    
+    <a href="{{ path('admin_carousel_new') }}" class="btn btn-submitForm col-sm-2 mt-3">Nouveau carousel</a>
+    
+    <table class="table tab">
+        <thead class="tab">
+            <tr class="tab">
+                <th>ID</th>
+                <th>Page</th>
+                <th>Détails</th>
+                <th>Modifier</th>
+            </tr>
+        </thead>
+        <tbody class="tab">
+        {% for carousel in carousels %}
+            <tr class="tab">
+                <td class="rFb">{{ carousel.id }}</td>
+                <td>{{ carousel.page }}</td>
+                <td>
+                    <a href="{{ path('admin_carousel_show', {'id': carousel.id}) }}"><i class="bi bi-eye-fill"></i></a>
+                </td>
+                <td>
+                    <a href="{{ path('admin_carousel_edit', {'id': carousel.id}) }}"><i class="bi bi-pencil-square"></i></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">Aucun résultat.</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="row justify-content-center">
+        <a href="{{ path('admin_dashboard') }}" class="btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5">Dashboard</a>
+    </div>
+</div>
+{% endblock %}

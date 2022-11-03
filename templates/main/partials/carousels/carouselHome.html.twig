@@ -1,0 +1,32 @@
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            {% for carousel in carousels %}
+                 {% if carousel.page == "home" %}  {# on ne traite que le carousel pour lequel pare=home #}
+                    {% for picture in carousel.CarouselPictures %}
+                        {% if loop.index0 == 0 %} {# si c'est la première image de la boucle ajoute active dans class  #}
+                          <div class="carousel-item active">
+                            <img src="{{ asset('/uploads/pictures/'~ picture.picture.pictureFile) }}" class="d-block w-100 carouselHome" alt="..." >
+                          </div>
+                          {% else %}                    
+                          <div class="carousel-item">
+                            <img src="{{ asset('/uploads/pictures/'~ picture.picture.pictureFile) }}" class="d-block w-100 carouselHome" alt="..." >
+                          </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+          </button>
+
+
+
+
+

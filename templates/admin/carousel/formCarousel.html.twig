@@ -1,0 +1,57 @@
+{{ form_start(formCarousel) }}
+
+
+    <div class="row rFb">
+        <div class="col-2 mt-2 mx-auto">{{ form_row(formCarousel.page)}}</div>   
+    </div>
+
+    {# on vérifie si la route est 'edit' #}
+    {% if app.request.attributes.get('_route') == 'admin_carousel_edit' %}
+
+    <div class="row rFb">
+        <div class="col-10 mt-2 mb-4 border rounded pt-2 mx-auto" id="illustrations">
+            <div class="mb-3">
+                <h2 class="mb-3 text-center rF rFb">Images du Carousel n° {{carousel.id}}</h2>
+                <section class="row ">
+                   {% for picture in carousel.carouselPictures %}
+                    <div class="pics col text-center">
+                        <img class="shadow-sm p-3 bg-body rounded mb-2" src="{{ asset('/uploads/pictures/'~ picture.picture.pictureFile) }}" height="150px"><br>
+                        <div class="mb-2">
+                        {# Il faudra ajouter un filtre twig ici pour afficher les images dans l'ordre croissant de position #}
+                        {{form_row(formCarousel.positions[loop.index0].position)}}
+                        
+                        </div>
+                        <a class="btn ms-2 mb-3 btn-reset" href="{{ path('admin_carousel_unlinkPicture', {carousel_id: carousel.id ,id: picture.picture.id}) }}" >Détacher</a>
+                    </div>
+                   {% endfor %}
+                    
+                </section>
+            </div>
+        </div>    
+    </div>
+    
+    {% endif %}
+    
+
+
+    <div class="row justify-content-center rFb">
+        <div class="col-5 mt-2 ">{{ form_row(formCarousel.pictures)}}</div>
+        <div class="col-5 mt-2" id="previewUpload"></div>
+        </div>
+        <div class="row justify-content-center rFb">
+            <div class="col-5 mt-2">{{ form_row(formCarousel.savedPictures)}}</div>
+            <div class="col-5 mt-2" id="previewSaved"></div>
+        </div>
+    
+    </div>
+    
+
+    <div class="row justify-content-center">
+        <a href="{{ path('admin_carousel_index') }}" class="btn btn-return col-2 me-2">Retour</a>
+        <button class="btn btn-submitForm col-2 ms-2">{{ button_label|default('Valider') }}</button>
+    </div>
+
+
+
+    
+{{ form_end(formCarousel) }}

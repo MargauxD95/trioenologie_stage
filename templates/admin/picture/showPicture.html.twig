@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails image n°{{picture.id}}{% endblock %}
+
+{% block body %}
+<div class="container col-lg-12 col-md-10 col-sm-8 mt-5 mb-3 ">
+
+    <h1 class="text-center rF mt-3 mb-5 mb-3">Image n°{{picture.id}}</h1>
+
+    <div class="row justify-content-center mb-3 ">
+        <div class="col-5 bg-light shadow-sm rounded justify-content-center fs-6">
+            <table class="table table-borderless ">
+            <tbody>
+            <tr>
+                <th class="col-3 rFi text-right ">Fichier :</th>
+                <td class="rF text-left ">{{ picture.pictureFile }}</td>
+            </tr>
+            <tr>
+                <th class="col-3 rFi text-right">Titre :</th>
+                <td class="rF text-left">{{ picture.title }}</td>
+            </tr>
+            <tr>
+                <th class="rFi col-3 text-right">Balise Alt :</th>
+                <td class="rF text-left">{{ picture.altText }}</td>
+            </tr>
+            <tr>
+                <th class="col-3 rFi text-lrigh">Largeur :</th>
+                <td class="rF text-left">{{ picture.width }}px</td>
+            </tr>
+            <tr>
+                <th class="col-3 rFi text-right">Hauteur :</th>
+                <td class="rF text-left">{{ picture.height }}px</td>
+            </tr>
+            <tr>
+                <th class="rFi col-3 text-right">Légende :</th>
+                <td class="rF text-left">{{ picture.legend }}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    
+</div>
+
+    <div class="row justify-content-center text-center mt">
+        <div class="col">
+            <img class="shadow-sm p-3 bg-body rounded" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="200px">
+        </div>
+    </div>
+
+    <div class="row justify-content-center text-center mt-5 mb-5">
+        <div class="col-3 ms-3">
+            <a href="{{ path('admin_picture_index') }}" class="btn btn-return">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+            </a>            
+        </div>
+
+        <div class="col-3">
+            <a href="{{ path('admin_picture_edit', {'id':picture.id}) }}" class="btn btn-update">
+                <i class="bi bi-pencil"></i>
+            </a>
+        </div>
+
+        <div class="col-3 ms-3 me-1">
+            <form method="post" action="{{ path('admin_picture_delete', {'id': picture.id}) }}" onsubmit="return confirm('Êtes-vous sûr.e de vouloir supprimer cet article?');">
+                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ picture.id) }}">
+                    <button class="btn btn-delete mb-3"><i class="bi bi-trash3-fill"></i></button>
+            </form>      
+        </div>
+
+    </div>
+</div>
+{% endblock %}
