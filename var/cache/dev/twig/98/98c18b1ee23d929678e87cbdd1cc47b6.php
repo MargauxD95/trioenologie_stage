@@ -79,6 +79,6 @@ class __TwigTemplate_7bd5edf5d4fe575b466a8c8ec0ecd204 extends Template
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ category.id) }}\">
     <button class=\"btn btn-delete mb-3\"><i class=\"bi bi-trash3-fill\"></i></button>
 </form>
-", "admin/category/deleteCategory.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\category\\deleteCategory.html.twig");
+", "admin/category/deleteCategory.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\category\\deleteCategory.html.twig");
     }
 }

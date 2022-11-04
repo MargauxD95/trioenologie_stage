@@ -216,6 +216,6 @@ class __TwigTemplate_237176e4e2ad5c01b43d46870ec7cb03 extends Template
 {{ form_end(formArticle) }}
 </section>
 
-", "admin/article/formArticle.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\article\\formArticle.html.twig");
+", "admin/article/formArticle.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\article\\formArticle.html.twig");
     }
 }

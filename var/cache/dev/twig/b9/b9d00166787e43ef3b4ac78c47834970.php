@@ -99,6 +99,6 @@ class __TwigTemplate_77a0930daf5d533e9de3146ad1391936 extends Template
 .container.body_default {
     border-top: 8px solid #aaaaaa;
 }
-", "@email/zurb_2/notification/local.css", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\local.css");
+", "@email/zurb_2/notification/local.css", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\vendor\\symfony\\twig-bridge\\Resources\\views\\Email\\zurb_2\\notification\\local.css");
     }
 }

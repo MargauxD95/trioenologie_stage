@@ -355,6 +355,6 @@ class __TwigTemplate_b0bd3733a1ab804e75d54ad79398bd38 extends Template
 
     <div id=\"calendar-holder\"></div>
 
-{% endblock %}", "admin/occasion/calendrier.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\occasion\\calendrier.html.twig");
+{% endblock %}", "admin/occasion/calendrier.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\occasion\\calendrier.html.twig");
     }
 }

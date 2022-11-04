@@ -81,6 +81,6 @@ class __TwigTemplate_a4351ccaa3efcd8291120cb1ba2446d7 extends Template
       <button onclick=\"isConfirmed(true)\" class='btn btn-primary'>Oui</button>
       <button onclick=\"isConfirmed(false)\" class='btn btn-secondary'>Non</button>
     </div>
-</div>", "main/partials/dialogBox.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\main\\partials\\dialogBox.html.twig");
+</div>", "main/partials/dialogBox.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\main\\partials\\dialogBox.html.twig");
     }
 }

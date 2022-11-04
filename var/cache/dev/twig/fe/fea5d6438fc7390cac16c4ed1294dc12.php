@@ -195,6 +195,8 @@ class __TwigTemplate_8b116183bfd52d105f4a1fa572d01328 extends Template
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
         echo "\" class=\"btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5\">Dashboard</a>
     </div>
+    
+</div>
 
 ";
         
@@ -280,8 +282,10 @@ class __TwigTemplate_8b116183bfd52d105f4a1fa572d01328 extends Template
     <div class=\"row justify-content-center\">
         <a href=\"{{ path('admin_dashboard') }}\" class=\"btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5\">Dashboard</a>
     </div>
+    
+</div>
 
 {% endblock %}
-", "admin/user/users.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\user\\users.html.twig");
+", "admin/user/users.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\user\\users.html.twig");
     }
 }

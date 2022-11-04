@@ -160,6 +160,6 @@ class __TwigTemplate_50267bf0e1fec47991578a9aa652ab9e extends Template
     </div>
 
     {{ form_end(form) }}
-</section>", "admin/category/formCategory.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\category\\formCategory.html.twig");
+</section>", "admin/category/formCategory.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\category\\formCategory.html.twig");
     }
 }

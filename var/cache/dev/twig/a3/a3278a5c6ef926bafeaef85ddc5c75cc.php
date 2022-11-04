@@ -63,6 +63,6 @@ class __TwigTemplate_f86fe403f92e81c60f0b29faad950cf9 extends Template
     public function getSourceContext()
     {
         return new Source("<div id=\"calendar-holder\"></div>
-", "@Calendar/calendar.html", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\vendor\\tattali\\calendar-bundle\\src\\Resources\\views\\calendar.html");
+", "@Calendar/calendar.html", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\vendor\\tattali\\calendar-bundle\\src\\Resources\\views\\calendar.html");
     }
 }

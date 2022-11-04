@@ -83,6 +83,6 @@ class __TwigTemplate_32e5b3d69d267eedae286baeb7f69e76 extends Template
         <button class=\"btn btn-delete col-lg-1 col-md-1 col-sm-2 mb-3\">Supprimer l'image</button>
     </div>
 </form>
-", "editor/gallery/deleteGallery.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\editor\\gallery\\deleteGallery.html.twig");
+", "editor/gallery/deleteGallery.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\editor\\gallery\\deleteGallery.html.twig");
     }
 }

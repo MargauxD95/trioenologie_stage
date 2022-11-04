@@ -84,6 +84,6 @@ class __TwigTemplate_0fef1bff29e4c0c8b29ba3ce7249f2e7 extends Template
     {{ form_widget(form) }}
     <button class=\"btn\">{{ button_label|default('Valider') }}</button>
 {{ form_end(form) }}
-", "user/profile/formProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\user\\profile\\formProfile.html.twig");
+", "user/profile/formProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\user\\profile\\formProfile.html.twig");
     }
 }

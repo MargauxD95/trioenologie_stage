@@ -85,41 +85,58 @@ class __TwigTemplate_7aac399957edc339d2c34adbc4d03b96 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Carousel</h1>
+        echo "<div class=\"container col-lg-12 col-md-10 col-sm-8 mt-5\">
 
-    <table class=\"table\">
-        <tbody>
+    <h1>Carousel</h1>
+
+    <table class=\"table text-center table-borderless table-striped\">
+        <tbody class=\"tab\">
             <tr>
-                <th>Id</th>
-                <td>";
-        // line 12
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["carousel"]) || array_key_exists("carousel", $context) ? $context["carousel"] : (function () { throw new RuntimeError('Variable "carousel" does not exist.', 12, $this->source); })()), "id", [], "any", false, false, false, 12), "html", null, true);
+                <th class=\"col-2 rFi\">ID</th>
+                <td class=\"rF\">";
+        // line 14
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["carousel"]) || array_key_exists("carousel", $context) ? $context["carousel"] : (function () { throw new RuntimeError('Variable "carousel" does not exist.', 14, $this->source); })()), "id", [], "any", false, false, false, 14), "html", null, true);
         echo "</td>
             </tr>
             <tr>
-                <th>Page</th>
-                <td>";
-        // line 16
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["carousel"]) || array_key_exists("carousel", $context) ? $context["carousel"] : (function () { throw new RuntimeError('Variable "carousel" does not exist.', 16, $this->source); })()), "page", [], "any", false, false, false, 16), "html", null, true);
+                <th class=\"col-2 rFi\">Page</th>
+                <td class=\"rF\">";
+        // line 18
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["carousel"]) || array_key_exists("carousel", $context) ? $context["carousel"] : (function () { throw new RuntimeError('Variable "carousel" does not exist.', 18, $this->source); })()), "page", [], "any", false, false, false, 18), "html", null, true);
         echo "</td>
             </tr>
         </tbody>
     </table>
 
-    <a href=\"";
-        // line 21
+    <div class=\"row justify-content-center text-center mt-3 mb-5\">
+
+        <div class=\"col-3 ms-3\">
+        <a href=\"";
+        // line 26
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_carousel_index");
-        echo "\">back to list</a>
+        echo "\" class=\"btn btn-return\">
+            <i class=\"bi bi-arrow-left-circle-fill\"></i>
+        </a>            
+        </div>
 
-    <a href=\"";
-        // line 23
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_carousel_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["carousel"]) || array_key_exists("carousel", $context) ? $context["carousel"] : (function () { throw new RuntimeError('Variable "carousel" does not exist.', 23, $this->source); })()), "id", [], "any", false, false, false, 23)]), "html", null, true);
-        echo "\">edit</a>
+        <div class=\"col-3\">
+        <a href=\"";
+        // line 32
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_carousel_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["carousel"]) || array_key_exists("carousel", $context) ? $context["carousel"] : (function () { throw new RuntimeError('Variable "carousel" does not exist.', 32, $this->source); })()), "id", [], "any", false, false, false, 32)]), "html", null, true);
+        echo "\" class=\"btn btn-update\">
+            <i class=\"bi bi-pencil\"></i>
+        </a>
+        </div>
 
-    ";
-        // line 25
+        <div class=\"col-3 ms-3 me-1\">
+            ";
+        // line 38
         echo twig_include($this->env, $context, "admin/carousel/deleteCarousel.html.twig");
-        echo "
+        echo "        
+        </div>
+
+    </div>
+</div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -141,7 +158,7 @@ class __TwigTemplate_7aac399957edc339d2c34adbc4d03b96 extends Template
 
     public function getDebugInfo()
     {
-        return array (  121 => 25,  116 => 23,  111 => 21,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  134 => 38,  125 => 32,  116 => 26,  105 => 18,  98 => 14,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -151,27 +168,44 @@ class __TwigTemplate_7aac399957edc339d2c34adbc4d03b96 extends Template
 {% block title %}Carousel{% endblock %}
 
 {% block body %}
+<div class=\"container col-lg-12 col-md-10 col-sm-8 mt-5\">
+
     <h1>Carousel</h1>
 
-    <table class=\"table\">
-        <tbody>
+    <table class=\"table text-center table-borderless table-striped\">
+        <tbody class=\"tab\">
             <tr>
-                <th>Id</th>
-                <td>{{ carousel.id }}</td>
+                <th class=\"col-2 rFi\">ID</th>
+                <td class=\"rF\">{{ carousel.id }}</td>
             </tr>
             <tr>
-                <th>Page</th>
-                <td>{{ carousel.page }}</td>
+                <th class=\"col-2 rFi\">Page</th>
+                <td class=\"rF\">{{ carousel.page }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href=\"{{ path('admin_carousel_index') }}\">back to list</a>
+    <div class=\"row justify-content-center text-center mt-3 mb-5\">
 
-    <a href=\"{{ path('admin_carousel_edit', {'id': carousel.id}) }}\">edit</a>
+        <div class=\"col-3 ms-3\">
+        <a href=\"{{ path('admin_carousel_index') }}\" class=\"btn btn-return\">
+            <i class=\"bi bi-arrow-left-circle-fill\"></i>
+        </a>            
+        </div>
 
-    {{ include('admin/carousel/deleteCarousel.html.twig') }}
+        <div class=\"col-3\">
+        <a href=\"{{ path('admin_carousel_edit', {'id': carousel.id}) }}\" class=\"btn btn-update\">
+            <i class=\"bi bi-pencil\"></i>
+        </a>
+        </div>
+
+        <div class=\"col-3 ms-3 me-1\">
+            {{ include('admin/carousel/deleteCarousel.html.twig') }}        
+        </div>
+
+    </div>
+</div>
 {% endblock %}
-", "admin/carousel/showCarousel.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\carousel\\showCarousel.html.twig");
+", "admin/carousel/showCarousel.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\carousel\\showCarousel.html.twig");
     }
 }

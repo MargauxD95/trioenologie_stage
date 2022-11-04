@@ -79,6 +79,6 @@ class __TwigTemplate_a9c2000d56025fe2ba7780a06e73e93c extends Template
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ gallery.id) }}\">
     <button class=\"btn\">Delete</button>
 </form>
-", "admin/gallery/deleteGallery.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\gallery\\deleteGallery.html.twig");
+", "admin/gallery/deleteGallery.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\gallery\\deleteGallery.html.twig");
     }
 }

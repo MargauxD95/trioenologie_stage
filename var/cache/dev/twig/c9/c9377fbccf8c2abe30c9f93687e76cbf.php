@@ -79,6 +79,6 @@ class __TwigTemplate_e38e2f126a7090ee04cb7615b3ba20c2 extends Template
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ profile.id) }}\">
     <button class=\"btn btn-danger my-1\" id=\"btnDelete\" onclick=\"showDialogBox()\">Supprimer le profil</button>
 </form>
-", "user/profile/deleteProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\user\\profile\\deleteProfile.html.twig");
+", "user/profile/deleteProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\user\\profile\\deleteProfile.html.twig");
     }
 }

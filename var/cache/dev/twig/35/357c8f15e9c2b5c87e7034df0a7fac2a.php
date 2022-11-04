@@ -86,19 +86,17 @@ class __TwigTemplate_a585b7ccc864435e856135add86b772e extends Template
 
         // line 6
         echo "<div class=\"container\">
-    <h1 class=\"sP text-center\">Détails de l'évènement ";
-        // line 7
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["occasion"]) || array_key_exists("occasion", $context) ? $context["occasion"] : (function () { throw new RuntimeError('Variable "occasion" does not exist.', 7, $this->source); })()), "title", [], "any", false, false, false, 7), "html", null, true);
-        echo "</h1>
-
+    ";
+        // line 8
+        echo "
         <section class=\"row justify-content-center col-lg-12 col-md-12\">
 
-                <div class=\"col lg-5 col-md-7 col-sm-6 shadow text-center mt-3 mb-3 ms-3 me-3\" id=\"eventShow\">
+                <div class=\"col lg-5 col-md-7 col-sm-6 shadow text-center mt-4 mb-3 ms-3 me-3\" id=\"eventShow\">
 
-                <h2 class=\"sP mt-3 mb-3\">";
+                <h1 class=\"sP mt-3 mb-3\">";
         // line 13
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["occasion"]) || array_key_exists("occasion", $context) ? $context["occasion"] : (function () { throw new RuntimeError('Variable "occasion" does not exist.', 13, $this->source); })()), "title", [], "any", false, false, false, 13), "html", null, true);
-        echo "</h2>    
+        echo "</h1>    
 
                 ";
         // line 15
@@ -237,7 +235,7 @@ class __TwigTemplate_a585b7ccc864435e856135add86b772e extends Template
 
     public function getDebugInfo()
     {
-        return array (  216 => 70,  210 => 67,  207 => 66,  196 => 58,  192 => 57,  184 => 52,  179 => 50,  174 => 48,  169 => 45,  167 => 44,  155 => 35,  150 => 33,  146 => 32,  139 => 28,  134 => 26,  128 => 23,  125 => 22,  113 => 18,  109 => 16,  105 => 15,  100 => 13,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  214 => 70,  208 => 67,  205 => 66,  194 => 58,  190 => 57,  182 => 52,  177 => 50,  172 => 48,  167 => 45,  165 => 44,  153 => 35,  148 => 33,  144 => 32,  137 => 28,  132 => 26,  126 => 23,  123 => 22,  111 => 18,  107 => 16,  103 => 15,  98 => 13,  91 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -248,13 +246,13 @@ class __TwigTemplate_a585b7ccc864435e856135add86b772e extends Template
 
 {% block body %}
 <div class=\"container\">
-    <h1 class=\"sP text-center\">Détails de l'évènement {{occasion.title}}</h1>
+    {#<h1 class=\"sP text-center\">Détails de l'évènement {{occasion.title}}</h1>#}
 
         <section class=\"row justify-content-center col-lg-12 col-md-12\">
 
-                <div class=\"col lg-5 col-md-7 col-sm-6 shadow text-center mt-3 mb-3 ms-3 me-3\" id=\"eventShow\">
+                <div class=\"col lg-5 col-md-7 col-sm-6 shadow text-center mt-4 mb-3 ms-3 me-3\" id=\"eventShow\">
 
-                <h2 class=\"sP mt-3 mb-3\">{{ occasion.title }}</h2>    
+                <h1 class=\"sP mt-3 mb-3\">{{ occasion.title }}</h1>    
 
                 {% for picture in occasion.pictures %}
                     <div class=\"surroundPics my-1 col-sm-auto\">
@@ -315,6 +313,6 @@ class __TwigTemplate_a585b7ccc864435e856135add86b772e extends Template
 </div>
 
 {% endblock %}
-", "main/pages/programme/showEvent.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\main\\pages\\programme\\showEvent.html.twig");
+", "main/pages/programme/showEvent.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\main\\pages\\programme\\showEvent.html.twig");
     }
 }

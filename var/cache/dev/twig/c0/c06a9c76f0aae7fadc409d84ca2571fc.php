@@ -130,6 +130,6 @@ class __TwigTemplate_273f84ac42f8c0340b604aae0c7a99f4 extends Template
     {{ include('editor/picture/formPicture.html.twig') }}
 </div>
 {% endblock %}
-", "editor/picture/newPicture.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\editor\\picture\\newPicture.html.twig");
+", "editor/picture/newPicture.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\editor\\picture\\newPicture.html.twig");
     }
 }

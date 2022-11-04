@@ -162,6 +162,6 @@ class __TwigTemplate_4f837546819b83c571f05cd0edd3e2ff extends Template
     <script src=\"/assets/js/previewUploadPicture.js\" ></script>
 
 {% endblock %}
-", "admin/picture/newPictures.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\picture\\newPictures.html.twig");
+", "admin/picture/newPictures.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\picture\\newPictures.html.twig");
     }
 }

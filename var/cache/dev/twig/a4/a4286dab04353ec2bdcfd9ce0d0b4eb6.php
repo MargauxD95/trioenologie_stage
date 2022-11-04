@@ -133,6 +133,6 @@ class __TwigTemplate_bfb001d4408f49653dced5904afb3463 extends Template
 
     <a href=\"{{ path('admin_user_index') }}\">Retour à la liste des utilisateurs</a>
 {% endblock %}
-", "admin/user/profile/newProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\user\\profile\\newProfile.html.twig");
+", "admin/user/profile/newProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\user\\profile\\newProfile.html.twig");
     }
 }

@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '4c77ebeed962bd56821a2a96c92e61cabcce0ffc',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'b143a4120aa31a07d72855cb0f41dcff0c229346',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '4c77ebeed962bd56821a2a96c92e61cabcce0ffc',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'b143a4120aa31a07d72855cb0f41dcff0c229346',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1260,9 +1260,9 @@
             'dev_requirement' => true,
         ),
         'symfony/webpack-encore-bundle' => array(
-            'pretty_version' => 'v1.15.1',
-            'version' => '1.15.1.0',
-            'reference' => '718673b1e758533614190ae74d07305a72bc66a9',
+            'pretty_version' => 'v1.16.0',
+            'version' => '1.16.0.0',
+            'reference' => 'bb399930c0299866258b616a74a27b50b94c5d45',
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../symfony/webpack-encore-bundle',
             'aliases' => array(),

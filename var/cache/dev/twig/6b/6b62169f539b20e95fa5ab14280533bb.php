@@ -151,6 +151,6 @@ class __TwigTemplate_ea97b8f3b60463ec2fd422f707b0e86d extends Template
 
     {{ form_end(form) }}
 </section>
-", "editor/picture/form_editPicture.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\editor\\picture\\form_editPicture.html.twig");
+", "editor/picture/form_editPicture.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\editor\\picture\\form_editPicture.html.twig");
     }
 }

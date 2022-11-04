@@ -219,6 +219,6 @@ class __TwigTemplate_7acbaed7c65fa705f66274f9ff6ef9e9 extends Template
 
 
 
-", "main/partials/carousels/carouselArticle.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\main\\partials\\carousels\\carouselArticle.html.twig");
+", "main/partials/carousels/carouselArticle.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\main\\partials\\carousels\\carouselArticle.html.twig");
     }
 }

@@ -83,6 +83,6 @@ class __TwigTemplate_0f6f8c96c6f8ba90bbd2ffd8ba7a2bc3 extends Template
         <button class=\"btn btn-delete col-lg-1 col-md-1 col-sm-2 mb-3\"><i class=\"bi bi-trash3-fill\"></i></button>
     </div>
 </form>
-", "admin/status/deleteStatus.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\status\\deleteStatus.html.twig");
+", "admin/status/deleteStatus.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\status\\deleteStatus.html.twig");
     }
 }

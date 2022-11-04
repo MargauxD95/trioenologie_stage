@@ -81,6 +81,6 @@ class __TwigTemplate_a922a375ffa9068085fc0d0ee91e2f15 extends Template
     <button class=\"btn btn-danger my-1\" id=\"btnDelete\" onclick=\"showDialogBox()\">Supprimer le profil</button>
 </form>
 
-", "admin/user/profile/deleteProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\user\\profile\\deleteProfile.html.twig");
+", "admin/user/profile/deleteProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\user\\profile\\deleteProfile.html.twig");
     }
 }

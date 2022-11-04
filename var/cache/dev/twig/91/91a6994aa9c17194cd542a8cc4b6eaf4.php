@@ -87,6 +87,6 @@ class __TwigTemplate_0dd3a022c025e0755734e26551a3e537 extends Template
 </form>
 
 
-", "admin/article/deleteArticle.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\article\\deleteArticle.html.twig");
+", "admin/article/deleteArticle.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\article\\deleteArticle.html.twig");
     }
 }

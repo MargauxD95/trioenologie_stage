@@ -104,6 +104,6 @@ class __TwigTemplate_fe5f96acb1dc95060b9d1fdc3356b81f extends Template
 <p>
     Trioenologie
 </p>
-", "registration/confirmation_email.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\registration\\confirmation_email.html.twig");
+", "registration/confirmation_email.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\registration\\confirmation_email.html.twig");
     }
 }

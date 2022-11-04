@@ -83,6 +83,6 @@ class __TwigTemplate_d9d602c80315dbd19404d339855bf3be extends Template
     {# <div class=\"row justify-content-center col-4\"> #}
         <button class=\"btn btn-delete mb-3\"><i class=\"bi bi-trash3-fill\"></i></button>
     {# </div> #}
-</form>", "admin/occasion/deleteOccasion.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\occasion\\deleteOccasion.html.twig");
+</form>", "admin/occasion/deleteOccasion.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\occasion\\deleteOccasion.html.twig");
     }
 }

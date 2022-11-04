@@ -234,6 +234,6 @@ class __TwigTemplate_de013dba1e51fd16280846ee2eee887d extends Template
   </div>
 </section>
 {% endblock %}
-", "registration/register.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\registration\\register.html.twig");
+", "registration/register.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\registration\\register.html.twig");
     }
 }

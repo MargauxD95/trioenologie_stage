@@ -196,6 +196,6 @@ class __TwigTemplate_2e0950dfdabaf118e8c339d4190c43bf extends Template
 
 {% block javascripts %}
     <script src=\"/assets/js/askConfirmation.js\" ></script>
-{% endblock %}", "admin/user/profile/editProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\user\\profile\\editProfile.html.twig");
+{% endblock %}", "admin/user/profile/editProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\user\\profile\\editProfile.html.twig");
     }
 }

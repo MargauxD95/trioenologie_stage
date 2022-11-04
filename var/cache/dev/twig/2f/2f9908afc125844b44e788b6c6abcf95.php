@@ -47,7 +47,7 @@ class __TwigTemplate_b12d835b204f0e318c59219c05a6d509 extends Template
         // line 2
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["carousel"]) || array_key_exists("carousel", $context) ? $context["carousel"] : (function () { throw new RuntimeError('Variable "carousel" does not exist.', 2, $this->source); })()), "id", [], "any", false, false, false, 2))), "html", null, true);
         echo "\">
-    <button class=\"btn\">Supprimer</button>
+    <button class=\"btn btn-delete mb-3\"><i class=\"bi bi-trash3-fill\"></i></button>
 </form>
 ";
         
@@ -77,8 +77,8 @@ class __TwigTemplate_b12d835b204f0e318c59219c05a6d509 extends Template
     {
         return new Source("<form method=\"post\" action=\"{{ path('admin_carousel_delete', {'id': carousel.id}) }}\" onsubmit=\"return confirm('Etes-vous sûr(e) de vouloir supprimer ce Carousel');\">
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ carousel.id) }}\">
-    <button class=\"btn\">Supprimer</button>
+    <button class=\"btn btn-delete mb-3\"><i class=\"bi bi-trash3-fill\"></i></button>
 </form>
-", "admin/carousel/deleteCarousel.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\carousel\\deleteCarousel.html.twig");
+", "admin/carousel/deleteCarousel.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\carousel\\deleteCarousel.html.twig");
     }
 }

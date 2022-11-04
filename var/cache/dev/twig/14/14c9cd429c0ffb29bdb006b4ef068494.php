@@ -174,6 +174,6 @@ class __TwigTemplate_8a9960ce2a1f778d74182a2e4ff9bb20 extends Template
         <button class=\"btn btn-submitForm col-2 ms-2 me-2\">{{ button_label|default('Valider') }}</button>
 
 {{ form_end(form) }}
-</section>", "admin/user/profile/formProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\user\\profile\\formProfile.html.twig");
+</section>", "admin/user/profile/formProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\user\\profile\\formProfile.html.twig");
     }
 }

@@ -316,6 +316,6 @@ class __TwigTemplate_d6dfc3ea18dd856b18adfa5422510d68 extends Template
 
 </div>
 {% endblock %}
-", "admin/occasion/showOccasion.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\admin\\occasion\\showOccasion.html.twig");
+", "admin/occasion/showOccasion.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\admin\\occasion\\showOccasion.html.twig");
     }
 }

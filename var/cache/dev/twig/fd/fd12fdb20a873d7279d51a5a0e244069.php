@@ -79,6 +79,6 @@ class __TwigTemplate_8962d1c24090a0b6fee7c1c988377fda extends Template
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ user.id) }}\">
     <button class=\"btn\">Supprimer le compte</button>
 </form>
-", "user/profile/deleteUser.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\user\\profile\\deleteUser.html.twig");
+", "user/profile/deleteUser.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\user\\profile\\deleteUser.html.twig");
     }
 }

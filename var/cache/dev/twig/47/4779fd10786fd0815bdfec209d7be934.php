@@ -184,6 +184,6 @@ class __TwigTemplate_003790edc976663a7722e26b23adf8a2 extends Template
         <button class=\"btn btn-submitForm col-2 ms-2\">{{ button_label|default('Valider') }}</button>
     </div>
 {{ form_end(form) }}
-</section>", "editor/picture/formPicture.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\editor\\picture\\formPicture.html.twig");
+</section>", "editor/picture/formPicture.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\editor\\picture\\formPicture.html.twig");
     }
 }

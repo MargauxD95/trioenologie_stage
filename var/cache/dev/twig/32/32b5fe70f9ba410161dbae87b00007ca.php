@@ -503,6 +503,6 @@ function resizeOnSize(\$pictureDirectory, \$filename, \$wantedWidth, \$wantedHei
 
 }
 
-", "includes/imagesProcessing.php", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie\\templates\\includes\\imagesProcessing.php");
+", "includes/imagesProcessing.php", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\includes\\imagesProcessing.php");
     }
 }
