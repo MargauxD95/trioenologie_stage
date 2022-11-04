@@ -1,0 +1,95 @@
+<?php //7a595bbe18119ff6dabdd7c6d25c86ef
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'start' => [
+                        0,
+                        2,
+                    ],
+                    'end' => [
+                        1,
+                        3,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT o0_.id AS id_0, o0_.title AS title_1, o0_.description AS description_2, o0_.start_date AS start_date_3, o0_.end_date AS end_date_4, o0_.max_parts AS max_parts_5, o0_.min_parts AS min_parts_6, o0_.category_id AS category_id_7 FROM occasion o0_ WHERE o0_.start_date BETWEEN ? AND ? OR o0_.end_date BETWEEN ? AND ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'occasion' => 'App\\Entity\\Occasion',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'title_1' => 'title',
+                    'description_2' => 'description',
+                    'start_date_3' => 'startDate',
+                    'end_date_4' => 'endDate',
+                    'max_parts_5' => 'maxParts',
+                    'min_parts_6' => 'minParts',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'category_id_7' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'occasion' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'category_id_7' => 'category_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'occasion',
+                    'title_1' => 'occasion',
+                    'description_2' => 'occasion',
+                    'start_date_3' => 'occasion',
+                    'end_date_4' => 'occasion',
+                    'max_parts_5' => 'occasion',
+                    'min_parts_6' => 'occasion',
+                    'category_id_7' => 'occasion',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Occasion',
+                    'title_1' => 'App\\Entity\\Occasion',
+                    'description_2' => 'App\\Entity\\Occasion',
+                    'start_date_3' => 'App\\Entity\\Occasion',
+                    'end_date_4' => 'App\\Entity\\Occasion',
+                    'max_parts_5' => 'App\\Entity\\Occasion',
+                    'min_parts_6' => 'App\\Entity\\Occasion',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
