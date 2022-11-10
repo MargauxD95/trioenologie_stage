@@ -89,34 +89,35 @@ class __TwigTemplate_0b4bb79fa11cbc394996e5810ce3fa58 extends Template
         echo "
 <div class=\"container\">
     <h1 class=\"mt-2 text-center\">Modifier le profil</h1>
+
     ";
-        // line 9
-        $this->loadTemplate("/main/partials/dialogBox.html.twig", "user/profile/editProfile.html.twig", 9)->display($context);
         // line 10
-        echo "    <div class=\"row justify-content-center col-6\">
+        $this->loadTemplate("/main/partials/dialogBox.html.twig", "user/profile/editProfile.html.twig", 10)->display($context);
+        // line 11
+        echo "
+    <div class=\"row justify-content-center col-6\">
     
         ";
-        // line 12
-        echo twig_include($this->env, $context, "user/profile/formProfile.html.twig", ["button_label" => "Mettre à jour"]);
+        // line 14
+        echo twig_include($this->env, $context, "user/profile/formProfile.html.twig", ["button_label" => "Mettre à jour le profil"]);
         echo "
 
-        <button class=\"btn btn-submit\" type=\"submit\">Valider</button>
-
     </div>
+
         ";
-        // line 18
-        echo "        <button id=\"btnReset\"  class=\"btn btn-warning my-1\" href=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_profile_reset", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["profile"]) || array_key_exists("profile", $context) ? $context["profile"] : (function () { throw new RuntimeError('Variable "profile" does not exist.', 18, $this->source); })()), "id", [], "any", false, false, false, 18)]), "html", null, true);
+        // line 19
+        echo "        <button id=\"btnReset\"  class=\"btn btn-warning my-1 col-2\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_profile_reset", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["profile"]) || array_key_exists("profile", $context) ? $context["profile"] : (function () { throw new RuntimeError('Variable "profile" does not exist.', 19, $this->source); })()), "id", [], "any", false, false, false, 19)]), "html", null, true);
         echo "\" onclick=\"showDialogBox()\" >Réinitialiser le profil</button>
 
         <a href=\"";
-        // line 20
+        // line 21
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_profile");
-        echo "\" class=\"btn btn-return col-4\">Retour au profil</a>
+        echo "\" class=\"btn btn-return col-2\">Retour au profil</a>
 
 
         ";
-        // line 24
+        // line 25
         echo "        ";
         echo twig_include($this->env, $context, "user/profile/deleteProfile.html.twig");
         echo "
@@ -131,7 +132,7 @@ class __TwigTemplate_0b4bb79fa11cbc394996e5810ce3fa58 extends Template
 
     }
 
-    // line 29
+    // line 30
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -141,7 +142,7 @@ class __TwigTemplate_0b4bb79fa11cbc394996e5810ce3fa58 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 30
+        // line 31
         echo "    <script src=\"/assets/js/askConfirmation.js\" ></script>
 ";
         
@@ -164,7 +165,7 @@ class __TwigTemplate_0b4bb79fa11cbc394996e5810ce3fa58 extends Template
 
     public function getDebugInfo()
     {
-        return array (  145 => 30,  135 => 29,  120 => 24,  114 => 20,  108 => 18,  100 => 12,  96 => 10,  94 => 9,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  146 => 31,  136 => 30,  121 => 25,  115 => 21,  109 => 19,  102 => 14,  97 => 11,  95 => 10,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -177,18 +178,19 @@ class __TwigTemplate_0b4bb79fa11cbc394996e5810ce3fa58 extends Template
 
 <div class=\"container\">
     <h1 class=\"mt-2 text-center\">Modifier le profil</h1>
+
     {% include \"/main/partials/dialogBox.html.twig\" %}
+
     <div class=\"row justify-content-center col-6\">
     
-        {{ include('user/profile/formProfile.html.twig', {'button_label': 'Mettre à jour'}) }}
-
-        <button class=\"btn btn-submit\" type=\"submit\">Valider</button>
+        {{ include('user/profile/formProfile.html.twig', {'button_label': 'Mettre à jour le profil'}) }}
 
     </div>
-        {#  RESET PROFILE #}
-        <button id=\"btnReset\"  class=\"btn btn-warning my-1\" href=\"{{ path('user_profile_reset', {'id': profile.id})}}\" onclick=\"showDialogBox()\" >Réinitialiser le profil</button>
 
-        <a href=\"{{ path('user_profile') }}\" class=\"btn btn-return col-4\">Retour au profil</a>
+        {#  RESET PROFILE #}
+        <button id=\"btnReset\"  class=\"btn btn-warning my-1 col-2\" href=\"{{ path('user_profile_reset', {'id': profile.id})}}\" onclick=\"showDialogBox()\" >Réinitialiser le profil</button>
+
+        <a href=\"{{ path('user_profile') }}\" class=\"btn btn-return col-2\">Retour au profil</a>
 
 
         {# DELETE PROFILE #}

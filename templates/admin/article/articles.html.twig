@@ -13,8 +13,6 @@
             <tr class="tab">
                 <th>ID</th>
                 <th>Titre</th>
-                <th>Intro</th>
-                <th>Images</th>
                 <th>Détails</th>
                 <th>Modifier</th>
             </tr>
@@ -24,18 +22,6 @@
             <tr class="tab">
                 <td class="rFb">{{ article.id }}</td>
                 <td>{{ article.title }}</td>
-                <td>{{ article.intro }}</td>
-                <td class="col-4">
-                {% if article.pictures|length > 2 %}
-                    {{ article.pictures|length }} photos
-                {% else %}
-                     {% for picture in article.pictures %}
-                        <img class="shadow-sm p-3 bg-body rounded mt-2 mb-2" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="120px">     
-                    {% endfor %}
-                {% endif %}
-                
-               
-                </td>
                 <td>
                     <a href="{{ path('admin_article_show', {'id': article.id}) }}"><i class="bi bi-eye-fill"></i></a>
                 </td>

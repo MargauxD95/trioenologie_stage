@@ -96,74 +96,39 @@ class __TwigTemplate_dd3dbf804dc59ab0d96d1b3d68b15ff4 extends Template
     <table class=\"table tab\">
         <thead class=\"tab\">
             <tr class=\"tab\">
-                <th>Id</th>
-                <th>Name</th>                
-                <th>Description</th>
-                <th>Composée de</th>
-                <th>Créée le</th>
-                <th>IsVisible</th>
+                <th>ID</th>
+                <th>Nom de la galerie</th>
                 <th>Détails</th>
                 <th>Modifier</th>
             </tr>
         </thead>
         <tbody>
         ";
-        // line 25
+        // line 21
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["galleries"]) || array_key_exists("galleries", $context) ? $context["galleries"] : (function () { throw new RuntimeError('Variable "galleries" does not exist.', 25, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["galleries"]) || array_key_exists("galleries", $context) ? $context["galleries"] : (function () { throw new RuntimeError('Variable "galleries" does not exist.', 21, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["gallery"]) {
-            // line 26
+            // line 22
             echo "            <tr class=\"tab\">
                 <td class=\"rFb\">";
-            // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["gallery"], "id", [], "any", false, false, false, 27), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["gallery"], "id", [], "any", false, false, false, 23), "html", null, true);
             echo "</td>
                 <td>";
-            // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["gallery"], "name", [], "any", false, false, false, 28), "html", null, true);
-            echo "</td> 
-                <td>";
-            // line 29
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["gallery"], "description", [], "any", false, false, false, 29), "html", null, true);
-            echo "</td>  
-                <td class=\"text-center\">
-                    ";
-            // line 31
-            if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["gallery"], "pictures", [], "any", false, false, false, 31), "count", [], "any", false, false, false, 31) > 1)) {
-                echo "                    
-                        ";
-                // line 32
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["gallery"], "pictures", [], "any", false, false, false, 32), "count", [], "any", false, false, false, 32), "html", null, true);
-                echo " photos
-                    ";
-            } else {
-                // line 34
-                echo "                        ";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["gallery"], "pictures", [], "any", false, false, false, 34), "count", [], "any", false, false, false, 34), "html", null, true);
-                echo " photo
-                    ";
-            }
-            // line 36
-            echo "                </td>
-                <td class=\"text-center\">";
-            // line 37
-            ((twig_get_attribute($this->env, $this->source, $context["gallery"], "createdAt", [], "any", false, false, false, 37)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["gallery"], "createdAt", [], "any", false, false, false, 37), "d-m-Y H:i"), "html", null, true))) : (print ("")));
-            echo "</td>
-                <td class=\"text-center\">";
-            // line 38
-            echo ((twig_get_attribute($this->env, $this->source, $context["gallery"], "isVisible", [], "any", false, false, false, 38)) ? ("Oui") : ("Non"));
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["gallery"], "name", [], "any", false, false, false, 24), "html", null, true);
             echo "</td>                
                 <td class=\"text-center\">
                     <a href=\"";
-            // line 40
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_gallery_show", ["id" => twig_get_attribute($this->env, $this->source, $context["gallery"], "id", [], "any", false, false, false, 40)]), "html", null, true);
+            // line 26
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_gallery_show", ["id" => twig_get_attribute($this->env, $this->source, $context["gallery"], "id", [], "any", false, false, false, 26)]), "html", null, true);
             echo "\"><i class=\"bi bi-eye-fill\"></i></a>
                 </td>
                 <td class=\"text-center\">
                      <a href=\"";
-            // line 43
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_gallery_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["gallery"], "id", [], "any", false, false, false, 43)]), "html", null, true);
+            // line 29
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_gallery_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["gallery"], "id", [], "any", false, false, false, 29)]), "html", null, true);
             echo "\"><i class=\"bi bi-pencil-square\"></i></a>
                 </td>
             </tr>
@@ -171,22 +136,22 @@ class __TwigTemplate_dd3dbf804dc59ab0d96d1b3d68b15ff4 extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 47
+            // line 33
             echo "            <tr>
-                <td colspan=\"8\">no records found</td>
+                <td colspan=\"8\">Aucun résultat</td>
             </tr>
         ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['gallery'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 51
+        // line 37
         echo "        </tbody>
     </table>
      
      <div class=\"row justify-content-center\">
         <a href=\"";
-        // line 55
+        // line 41
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
         echo "\" class=\"btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5\">Dashboard</a>
     </div>
@@ -215,7 +180,7 @@ class __TwigTemplate_dd3dbf804dc59ab0d96d1b3d68b15ff4 extends Template
 
     public function getDebugInfo()
     {
-        return array (  190 => 55,  184 => 51,  175 => 47,  166 => 43,  160 => 40,  155 => 38,  151 => 37,  148 => 36,  142 => 34,  137 => 32,  133 => 31,  128 => 29,  124 => 28,  120 => 27,  117 => 26,  112 => 25,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  155 => 41,  149 => 37,  140 => 33,  131 => 29,  125 => 26,  120 => 24,  116 => 23,  113 => 22,  108 => 21,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -233,12 +198,8 @@ class __TwigTemplate_dd3dbf804dc59ab0d96d1b3d68b15ff4 extends Template
     <table class=\"table tab\">
         <thead class=\"tab\">
             <tr class=\"tab\">
-                <th>Id</th>
-                <th>Name</th>                
-                <th>Description</th>
-                <th>Composée de</th>
-                <th>Créée le</th>
-                <th>IsVisible</th>
+                <th>ID</th>
+                <th>Nom de la galerie</th>
                 <th>Détails</th>
                 <th>Modifier</th>
             </tr>
@@ -247,17 +208,7 @@ class __TwigTemplate_dd3dbf804dc59ab0d96d1b3d68b15ff4 extends Template
         {% for gallery in galleries %}
             <tr class=\"tab\">
                 <td class=\"rFb\">{{ gallery.id }}</td>
-                <td>{{ gallery.name }}</td> 
-                <td>{{ gallery.description }}</td>  
-                <td class=\"text-center\">
-                    {% if gallery.pictures.count >1 %}                    
-                        {{gallery.pictures.count}} photos
-                    {% else %}
-                        {{gallery.pictures.count}} photo
-                    {% endif %}
-                </td>
-                <td class=\"text-center\">{{ gallery.createdAt ? gallery.createdAt|date('d-m-Y H:i') : '' }}</td>
-                <td class=\"text-center\">{{ gallery.isVisible ? 'Oui' : 'Non' }}</td>                
+                <td>{{ gallery.name }}</td>                
                 <td class=\"text-center\">
                     <a href=\"{{ path('admin_gallery_show', {'id': gallery.id}) }}\"><i class=\"bi bi-eye-fill\"></i></a>
                 </td>
@@ -267,7 +218,7 @@ class __TwigTemplate_dd3dbf804dc59ab0d96d1b3d68b15ff4 extends Template
             </tr>
         {% else %}
             <tr>
-                <td colspan=\"8\">no records found</td>
+                <td colspan=\"8\">Aucun résultat</td>
             </tr>
         {% endfor %}
         </tbody>

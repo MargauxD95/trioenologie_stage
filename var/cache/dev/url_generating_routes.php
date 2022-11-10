@@ -95,6 +95,7 @@ return [
     'app_reset_password' => [['token'], ['token' => null, '_controller' => 'App\\Controller\\ResetPasswordController::reset'], [], [['variable', '/', '[^/]++', 'token', true], ['text', '/reset-password/reset']], [], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'sitemap' => [[], ['_controller' => 'App\\Controller\\SitemapController::index'], [], [['text', '/sitemap']], [], [], []],
     'user_profile' => [[], ['_controller' => 'App\\Controller\\UserController::show'], [], [['text', '/user/profile']], [], [], []],
     'user_profile_edit' => [['id'], ['_controller' => 'App\\Controller\\UserController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/user/profile']], [], [], []],
     'user_profile_delete' => [['id'], ['_controller' => 'App\\Controller\\UserController::delete'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/user/profile']], [], [], []],

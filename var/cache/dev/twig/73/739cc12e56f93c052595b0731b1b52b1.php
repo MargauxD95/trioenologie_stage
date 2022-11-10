@@ -97,51 +97,46 @@ class __TwigTemplate_64cf4165d1e8102f1dfa07444a17ca4b extends Template
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_picture_newMulti");
         echo "\" class=\"btn btn-submitForm col-sm-3 mt-3\">Ajouter plusieurs images</a>
 
-    <table class=\"table tab\">
+    <table class=\"table tab col-sm-auto\">
         <thead class=\"tab\">
             <tr class=\"tab\">
                 <th>ID</th>
                 <th>Titre</th>
-                <th>Image</th>
                 <th>Détails</th>
                 <th>Modifier</th>
             </tr>
         </thead>
         <tbody class=\"tab\">
         ";
-        // line 23
+        // line 22
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["pictures"]) || array_key_exists("pictures", $context) ? $context["pictures"] : (function () { throw new RuntimeError('Variable "pictures" does not exist.', 23, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["pictures"]) || array_key_exists("pictures", $context) ? $context["pictures"] : (function () { throw new RuntimeError('Variable "pictures" does not exist.', 22, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["picture"]) {
-            // line 24
+            // line 23
             echo "            <tr class=\"tab\">
                 <td class=\"rFb\">";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["picture"], "id", [], "any", false, false, false, 25), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["picture"], "id", [], "any", false, false, false, 24), "html", null, true);
             echo "</td>
                 <td>";
-            // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["picture"], "title", [], "any", false, false, false, 26), "html", null, true);
+            // line 25
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["picture"], "title", [], "any", false, false, false, 25), "html", null, true);
             echo "</td>
-                <td class=\"col-4\"><img class=\"shadow-sm p-3 bg-body rounded\" src=\"";
-            // line 27
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("/uploads/pictures/" . twig_get_attribute($this->env, $this->source, $context["picture"], "pictureFile", [], "any", false, false, false, 27))), "html", null, true);
-            echo "\" height=\"120px\"></td>
                 <td><a href=\"";
-            // line 28
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_picture_show", ["id" => twig_get_attribute($this->env, $this->source, $context["picture"], "id", [], "any", false, false, false, 28)]), "html", null, true);
+            // line 26
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_picture_show", ["id" => twig_get_attribute($this->env, $this->source, $context["picture"], "id", [], "any", false, false, false, 26)]), "html", null, true);
             echo "\"><i class=\"bi bi-eye-fill\"></i></a></td>
                 <td><a href=\"";
-            // line 29
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_picture_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["picture"], "id", [], "any", false, false, false, 29)]), "html", null, true);
+            // line 27
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_picture_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["picture"], "id", [], "any", false, false, false, 27)]), "html", null, true);
             echo "\"><i class=\"bi bi-pencil-square\"></i></a></td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 32
+            // line 30
             echo "            <tr>
                 <td colspan=\"8\">Aucune image enregistrée.</td>
             </tr>
@@ -150,13 +145,13 @@ class __TwigTemplate_64cf4165d1e8102f1dfa07444a17ca4b extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['picture'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 36
+        // line 34
         echo "        </tbody>
     </table>
 
     <div class=\"row justify-content-center\">
         <a href=\"";
-        // line 40
+        // line 38
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
         echo "\" class=\"btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5\">Tableau de bord</a>
     </div>
@@ -182,7 +177,7 @@ class __TwigTemplate_64cf4165d1e8102f1dfa07444a17ca4b extends Template
 
     public function getDebugInfo()
     {
-        return array (  160 => 40,  154 => 36,  145 => 32,  137 => 29,  133 => 28,  129 => 27,  125 => 26,  121 => 25,  118 => 24,  113 => 23,  97 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  155 => 38,  149 => 34,  140 => 30,  132 => 27,  128 => 26,  124 => 25,  120 => 24,  117 => 23,  112 => 22,  97 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -198,12 +193,11 @@ class __TwigTemplate_64cf4165d1e8102f1dfa07444a17ca4b extends Template
     <a href=\"{{ path('admin_picture_newOne') }}\" class=\"btn btn-submitForm col-sm-3 mt-3\">Ajouter une seule image</a>
     <a href=\"{{ path('admin_picture_newMulti') }}\" class=\"btn btn-submitForm col-sm-3 mt-3\">Ajouter plusieurs images</a>
 
-    <table class=\"table tab\">
+    <table class=\"table tab col-sm-auto\">
         <thead class=\"tab\">
             <tr class=\"tab\">
                 <th>ID</th>
                 <th>Titre</th>
-                <th>Image</th>
                 <th>Détails</th>
                 <th>Modifier</th>
             </tr>
@@ -213,7 +207,6 @@ class __TwigTemplate_64cf4165d1e8102f1dfa07444a17ca4b extends Template
             <tr class=\"tab\">
                 <td class=\"rFb\">{{ picture.id }}</td>
                 <td>{{ picture.title }}</td>
-                <td class=\"col-4\"><img class=\"shadow-sm p-3 bg-body rounded\" src=\"{{ asset('/uploads/pictures/'~ picture.pictureFile) }}\" height=\"120px\"></td>
                 <td><a href=\"{{ path('admin_picture_show', {'id': picture.id}) }}\"><i class=\"bi bi-eye-fill\"></i></a></td>
                 <td><a href=\"{{ path('admin_picture_edit', {'id': picture.id}) }}\"><i class=\"bi bi-pencil-square\"></i></a></td>
             </tr>

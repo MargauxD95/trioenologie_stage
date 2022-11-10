@@ -116,7 +116,7 @@ class __TwigTemplate_5b48ce67065fcabac2221948a35cc179 extends Template
         </div>
     
         <div class=\"row justify-content-center pb-4\">
-            <button class=\"btn btn-contact col-lg-3 col-sm-auto\">";
+            <button class=\"btn btn-contact col-lg-3 col-sm-2\">";
         // line 23
         echo twig_escape_filter($this->env, ((array_key_exists("button_label", $context)) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 23, $this->source); })()), "Envoyer")) : ("Envoyer")), "html", null, true);
         echo "</button>   
@@ -183,7 +183,7 @@ class __TwigTemplate_5b48ce67065fcabac2221948a35cc179 extends Template
         </div>
     
         <div class=\"row justify-content-center pb-4\">
-            <button class=\"btn btn-contact col-lg-3 col-sm-auto\">{{ button_label|default('Envoyer') }}</button>   
+            <button class=\"btn btn-contact col-lg-3 col-sm-2\">{{ button_label|default('Envoyer') }}</button>   
         </div>
     </div>
     {{ form_end(form) }}

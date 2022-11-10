@@ -699,13 +699,13 @@ img#banniere{
     background-color: rgba(246, 184, 191, 0.5);
     border-radius: 15px;
     padding-top: 0.5rem;
-    margin-right: 4.8rem;
-    margin-left: 4.8rem;
+    margin-right: 2.8rem;
+    margin-left: 2.8rem;
 }
 .contact h2{
     text-align: center;
     font-family: 'Roboto Flex';
-    font-size: 2rem;
+    font-size: 25px;
     font-weight: 200;
     font-weight: bold;
 }
@@ -744,9 +744,11 @@ h1 span.sP{ font-size: 4rem;}
 /* Carousels */
 
 .carouselHome {
-    aspect-ratio: 19/9;
-    object-fit: cover;
-    height: 580px;
+    /* aspect-ratio: 19/9;
+    object-fit: cover; */
+    width: 100%;
+    /* height: 580px; */
+    height: auto;
 }
 
 #carouselArticle {
@@ -779,4 +781,11 @@ h1 span.sP{ font-size: 4rem;}
 
 #signIn .btn-return:hover{
     background-color: rgba(177, 15, 89, 0.8);
+}
+
+/* Personnalisation pages d'erreur */
+
+h1 span.error{
+    color: red;
+    font-weight: bold;
 }

@@ -40,37 +40,25 @@ class __TwigTemplate_fd4842644a54eaff00cf3da91c890838 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "main/partials/footer/footer.html.twig"));
 
         // line 1
-        echo "
-<footer id=\"footerNav\" class=\"shadow\" style=\"height:10%\">
-    <div class=\"row\">    
-        <div class=\"col-4 text-center\">
-        <a href=\"";
-        // line 5
+        echo "<footer class=\"d-flex flex-wrap justify-content-center align-items-center py-3 border-top\" style=\"height:10%\" id=\"footerNav\">    
+  <ul class=\"nav col-md-4\">
+    <li class=\"nav-item\"><a href=\"";
+        // line 3
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\"><img src=\"/assets/imagesTrioenologie/lettrage-nav.png\" class=\"mt-3 mx-auto imgFooter\" alt=\"Bannière trioenologie, 7 verres de vin de différentes couleurs.\"></a>
-        </div>
-
-
-        <div class=\"col-4 text-center\">    
-            <ul class=\"text-center mt-2\">
-                <a href=\"";
-        // line 11
+        echo "\" class=\"nav-link px-2\">Accueil</a></li>
+    <li class=\"nav-item\"><a href=\"";
+        // line 4
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("mentions");
-        echo "\">Mentions légales</a>
-                <a href=\"";
-        // line 12
+        echo "\" class=\"nav-link px-2\">Mentions-légales</a></li>
+    <li class=\"nav-item\"><a href=\"";
+        // line 5
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
-        echo "\">Contact</a>
-                <p class=\"text-center\" id=\"footerBrand\"> ©️ Trioenologie - 2022</p>   
-            </ul>
-        </div>
-
-        <div class=\"col-4 text-center\">
-            <ul class=\"mt-4\">
-                <a href=\"\"><i class=\"bi bi-facebook\"></i></a>
-            </ul>
-        </div>
-    </div></footer>";
+        echo "\" class=\"nav-link px-2\">Contact</a></li>
+    <li class=\"nav-item\"><a href=\"https://www.facebook.com/profile.php?id=100083153171115\" class=\"nav-link px-2\"><i class=\"bi bi-facebook\"></i></a></li>      
+  </ul>
+    ";
+        // line 10
+        echo "</footer>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -91,32 +79,20 @@ class __TwigTemplate_fd4842644a54eaff00cf3da91c890838 extends Template
 
     public function getDebugInfo()
     {
-        return array (  62 => 12,  58 => 11,  49 => 5,  43 => 1,);
+        return array (  61 => 10,  55 => 5,  51 => 4,  47 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("
-<footer id=\"footerNav\" class=\"shadow\" style=\"height:10%\">
-    <div class=\"row\">    
-        <div class=\"col-4 text-center\">
-        <a href=\"{{ path('home') }}\"><img src=\"/assets/imagesTrioenologie/lettrage-nav.png\" class=\"mt-3 mx-auto imgFooter\" alt=\"Bannière trioenologie, 7 verres de vin de différentes couleurs.\"></a>
-        </div>
-
-
-        <div class=\"col-4 text-center\">    
-            <ul class=\"text-center mt-2\">
-                <a href=\"{{ path('mentions') }}\">Mentions légales</a>
-                <a href=\"{{ path('contact') }}\">Contact</a>
-                <p class=\"text-center\" id=\"footerBrand\"> ©️ Trioenologie - 2022</p>   
-            </ul>
-        </div>
-
-        <div class=\"col-4 text-center\">
-            <ul class=\"mt-4\">
-                <a href=\"\"><i class=\"bi bi-facebook\"></i></a>
-            </ul>
-        </div>
-    </div></footer>", "main/partials/footer/footer.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\main\\partials\\footer\\footer.html.twig");
+        return new Source("<footer class=\"d-flex flex-wrap justify-content-center align-items-center py-3 border-top\" style=\"height:10%\" id=\"footerNav\">    
+  <ul class=\"nav col-md-4\">
+    <li class=\"nav-item\"><a href=\"{{ path('home') }}\" class=\"nav-link px-2\">Accueil</a></li>
+    <li class=\"nav-item\"><a href=\"{{ path('mentions') }}\" class=\"nav-link px-2\">Mentions-légales</a></li>
+    <li class=\"nav-item\"><a href=\"{{ path('contact') }}\" class=\"nav-link px-2\">Contact</a></li>
+    <li class=\"nav-item\"><a href=\"https://www.facebook.com/profile.php?id=100083153171115\" class=\"nav-link px-2\"><i class=\"bi bi-facebook\"></i></a></li>      
+  </ul>
+    {# <hr>
+    <p class=\"col-md-4 mb-0\" id=\"footerBrand\">&copy; Trioenologie - 2022 </p> #}
+</footer>", "main/partials/footer/footer.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\main\\partials\\footer\\footer.html.twig");
     }
 }

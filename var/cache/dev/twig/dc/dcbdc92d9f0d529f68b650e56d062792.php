@@ -100,8 +100,6 @@ class __TwigTemplate_3d83ebc3d9e1221dc949be90a35a5408 extends Template
         <thead class=\"tab\">
             <tr class=\"tab\">
                 <th>ID</th>
-                <th class=\"col-3\">Photo</th>
-                <th>Catégorie</th>
                 <th>Titre</th>
                 <th>Détails</th>
                 <th>Modifier</th>
@@ -109,53 +107,31 @@ class __TwigTemplate_3d83ebc3d9e1221dc949be90a35a5408 extends Template
         </thead>
         <tbody class=\"tab\">
         ";
-        // line 26
+        // line 24
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["occasions"]) || array_key_exists("occasions", $context) ? $context["occasions"] : (function () { throw new RuntimeError('Variable "occasions" does not exist.', 26, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["occasions"]) || array_key_exists("occasions", $context) ? $context["occasions"] : (function () { throw new RuntimeError('Variable "occasions" does not exist.', 24, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["occasion"]) {
-            // line 27
+            // line 25
             echo "            <tr class=\"tab\">
                 <td class=\"rFb col-1\">";
-            // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["occasion"], "id", [], "any", false, false, false, 28), "html", null, true);
-            echo "</td>
-                <td class=\"col-3\">                
-                ";
-            // line 30
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["occasion"], "pictures", [], "any", false, false, false, 30));
-            foreach ($context['_seq'] as $context["_key"] => $context["picture"]) {
-                // line 31
-                echo "                    <img class=\"shadow-sm p-3 bg-body rounded\" src=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(("/uploads/pictures/" . twig_get_attribute($this->env, $this->source, $context["picture"], "pictureFile", [], "any", false, false, false, 31))), "html", null, true);
-                echo "\" height=\"200px\">     
-                ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['picture'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 32
-            echo "       
-                </td>
-                <td class=\"col-2\">";
-            // line 34
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["occasion"], "category", [], "any", false, false, false, 34), "name", [], "any", false, false, false, 34), "html", null, true);
+            // line 26
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["occasion"], "id", [], "any", false, false, false, 26), "html", null, true);
             echo "</td>
                 <td class=\"col-2\">";
-            // line 35
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["occasion"], "title", [], "any", false, false, false, 35), "html", null, true);
+            // line 27
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["occasion"], "title", [], "any", false, false, false, 27), "html", null, true);
             echo "</td>
                 <td class=\"col-1\">
                     <a href=\"";
-            // line 37
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_occasion_show", ["id" => twig_get_attribute($this->env, $this->source, $context["occasion"], "id", [], "any", false, false, false, 37)]), "html", null, true);
+            // line 29
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_occasion_show", ["id" => twig_get_attribute($this->env, $this->source, $context["occasion"], "id", [], "any", false, false, false, 29)]), "html", null, true);
             echo "\"><i class=\"bi bi-eye-fill\"></i></a>
                 </td>
                 <td class=\"col-1\">                
                     <a href=\"";
-            // line 40
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_occasion_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["occasion"], "id", [], "any", false, false, false, 40)]), "html", null, true);
+            // line 32
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_occasion_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["occasion"], "id", [], "any", false, false, false, 32)]), "html", null, true);
             echo "\"><i class=\"bi bi-pencil-square\"></i></a>
                 </td>
             </tr>
@@ -163,7 +139,7 @@ class __TwigTemplate_3d83ebc3d9e1221dc949be90a35a5408 extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 44
+            // line 36
             echo "            <tr>
                 <td colspan=\"8\">Aucun résultat.</td>
             </tr>
@@ -172,14 +148,14 @@ class __TwigTemplate_3d83ebc3d9e1221dc949be90a35a5408 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['occasion'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 40
         echo "        </tbody>
     </table>
 </div>
 
     <div class=\"row justify-content-center\">
         <a href=\"";
-        // line 53
+        // line 45
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_dashboard");
         echo "\" class=\"btn btn-lg btn-return shadow col-lg-2 col-md-2 col-sm-3 me-2 mt-3 mb-5\">Dashboard</a>
     </div>
@@ -206,7 +182,7 @@ class __TwigTemplate_3d83ebc3d9e1221dc949be90a35a5408 extends Template
 
     public function getDebugInfo()
     {
-        return array (  183 => 53,  176 => 48,  167 => 44,  158 => 40,  152 => 37,  147 => 35,  143 => 34,  139 => 32,  130 => 31,  126 => 30,  121 => 28,  118 => 27,  113 => 26,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  159 => 45,  152 => 40,  143 => 36,  134 => 32,  128 => 29,  123 => 27,  119 => 26,  116 => 25,  111 => 24,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -228,8 +204,6 @@ class __TwigTemplate_3d83ebc3d9e1221dc949be90a35a5408 extends Template
         <thead class=\"tab\">
             <tr class=\"tab\">
                 <th>ID</th>
-                <th class=\"col-3\">Photo</th>
-                <th>Catégorie</th>
                 <th>Titre</th>
                 <th>Détails</th>
                 <th>Modifier</th>
@@ -239,12 +213,6 @@ class __TwigTemplate_3d83ebc3d9e1221dc949be90a35a5408 extends Template
         {% for occasion in occasions %}
             <tr class=\"tab\">
                 <td class=\"rFb col-1\">{{ occasion.id }}</td>
-                <td class=\"col-3\">                
-                {% for picture in occasion.pictures %}
-                    <img class=\"shadow-sm p-3 bg-body rounded\" src=\"{{ asset('/uploads/pictures/'~ picture.pictureFile) }}\" height=\"200px\">     
-                {% endfor %}       
-                </td>
-                <td class=\"col-2\">{{ occasion.category.name }}</td>
                 <td class=\"col-2\">{{ occasion.title }}</td>
                 <td class=\"col-1\">
                     <a href=\"{{ path('admin_occasion_show', {'id': occasion.id}) }}\"><i class=\"bi bi-eye-fill\"></i></a>

@@ -6,18 +6,19 @@
 
 <div class="container">
     <h1 class="mt-2 text-center">Modifier le profil</h1>
+
     {% include "/main/partials/dialogBox.html.twig" %}
+
     <div class="row justify-content-center col-6">
     
-        {{ include('user/profile/formProfile.html.twig', {'button_label': 'Mettre à jour'}) }}
-
-        <button class="btn btn-submit" type="submit">Valider</button>
+        {{ include('user/profile/formProfile.html.twig', {'button_label': 'Mettre à jour le profil'}) }}
 
     </div>
-        {#  RESET PROFILE #}
-        <button id="btnReset"  class="btn btn-warning my-1" href="{{ path('user_profile_reset', {'id': profile.id})}}" onclick="showDialogBox()" >Réinitialiser le profil</button>
 
-        <a href="{{ path('user_profile') }}" class="btn btn-return col-4">Retour au profil</a>
+        {#  RESET PROFILE #}
+        <button id="btnReset"  class="btn btn-warning my-1 col-2" href="{{ path('user_profile_reset', {'id': profile.id})}}" onclick="showDialogBox()" >Réinitialiser le profil</button>
+
+        <a href="{{ path('user_profile') }}" class="btn btn-return col-2">Retour au profil</a>
 
 
         {# DELETE PROFILE #}

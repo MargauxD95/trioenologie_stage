@@ -93,7 +93,7 @@ class __TwigTemplate_2401c45424a0bc2c3cb3ed2b5244904c extends Template
             echo "
 <div class=\"container\">
 
-    <section class=\"shadow\">
+    <section class=\"mt-4\">
     
         <div class=\"row justify-content-center text-center profilContent\">
 
@@ -216,7 +216,7 @@ class __TwigTemplate_2401c45424a0bc2c3cb3ed2b5244904c extends Template
             <a href=\"";
             // line 97
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_profile_edit", ["id" => twig_get_attribute($this->env, $this->source, (isset($context["profile"]) || array_key_exists("profile", $context) ? $context["profile"] : (function () { throw new RuntimeError('Variable "profile" does not exist.', 97, $this->source); })()), "id", [], "any", false, false, false, 97)]), "html", null, true);
-            echo "\" class=\"btn btn-update col-4\">Modifier le profil</a>
+            echo "\" class=\"btn btn-update mb-2 col-3 col-sm-4\">Modifier le profil</a>
 
             <form method=\"post\" action=\"";
             // line 99
@@ -226,7 +226,7 @@ class __TwigTemplate_2401c45424a0bc2c3cb3ed2b5244904c extends Template
             // line 100
             echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["profile"]) || array_key_exists("profile", $context) ? $context["profile"] : (function () { throw new RuntimeError('Variable "profile" does not exist.', 100, $this->source); })()), "id", [], "any", false, false, false, 100))), "html", null, true);
             echo "\">
-                <button class=\"btn\">Supprimer le profil</button>
+                <button class=\"btn btn-delete col-4 mb-3\">Supprimer le profil</button>
             </form>
 
         </div>
@@ -278,7 +278,7 @@ class __TwigTemplate_2401c45424a0bc2c3cb3ed2b5244904c extends Template
 
 <div class=\"container\">
 
-    <section class=\"shadow\">
+    <section class=\"mt-4\">
     
         <div class=\"row justify-content-center text-center profilContent\">
 
@@ -364,11 +364,11 @@ class __TwigTemplate_2401c45424a0bc2c3cb3ed2b5244904c extends Template
 
         <div class=\"row justify-content-center text-center profileInfos\">
 
-            <a href=\"{{ path('user_profile_edit', {'id': profile.id}) }}\" class=\"btn btn-update col-4\">Modifier le profil</a>
+            <a href=\"{{ path('user_profile_edit', {'id': profile.id}) }}\" class=\"btn btn-update mb-2 col-3 col-sm-4\">Modifier le profil</a>
 
             <form method=\"post\" action=\"{{ path('user_profile_delete', {'id': profile.id}) }}\" onsubmit=\"return confirm('Êtes-vous sûr.e de vouloir supprimer votre profil? Ceci entrainera par défaut la suppression de votre compte.');\">
                 <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ profile.id) }}\">
-                <button class=\"btn\">Supprimer le profil</button>
+                <button class=\"btn btn-delete col-4 mb-3\">Supprimer le profil</button>
             </form>
 
         </div>

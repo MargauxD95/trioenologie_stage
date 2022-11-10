@@ -46,7 +46,7 @@ class __TwigTemplate_0fef1bff29e4c0c8b29ba3ce7249f2e7 extends Template
         // line 2
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 2, $this->source); })()), 'widget');
         echo "
-    <button class=\"btn\">";
+    <button class=\"btn btn-update\">";
         // line 3
         echo twig_escape_filter($this->env, ((array_key_exists("button_label", $context)) ? (_twig_default_filter((isset($context["button_label"]) || array_key_exists("button_label", $context) ? $context["button_label"] : (function () { throw new RuntimeError('Variable "button_label" does not exist.', 3, $this->source); })()), "Valider")) : ("Valider")), "html", null, true);
         echo "</button>
@@ -82,7 +82,7 @@ class __TwigTemplate_0fef1bff29e4c0c8b29ba3ce7249f2e7 extends Template
     {
         return new Source("{{ form_start(form) }}
     {{ form_widget(form) }}
-    <button class=\"btn\">{{ button_label|default('Valider') }}</button>
+    <button class=\"btn btn-update\">{{ button_label|default('Valider') }}</button>
 {{ form_end(form) }}
 ", "user/profile/formProfile.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\user\\profile\\formProfile.html.twig");
     }

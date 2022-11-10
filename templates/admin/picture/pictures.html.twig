@@ -9,12 +9,11 @@
     <a href="{{ path('admin_picture_newOne') }}" class="btn btn-submitForm col-sm-3 mt-3">Ajouter une seule image</a>
     <a href="{{ path('admin_picture_newMulti') }}" class="btn btn-submitForm col-sm-3 mt-3">Ajouter plusieurs images</a>
 
-    <table class="table tab">
+    <table class="table tab col-sm-auto">
         <thead class="tab">
             <tr class="tab">
                 <th>ID</th>
                 <th>Titre</th>
-                <th>Image</th>
                 <th>Détails</th>
                 <th>Modifier</th>
             </tr>
@@ -24,7 +23,6 @@
             <tr class="tab">
                 <td class="rFb">{{ picture.id }}</td>
                 <td>{{ picture.title }}</td>
-                <td class="col-4"><img class="shadow-sm p-3 bg-body rounded" src="{{ asset('/uploads/pictures/'~ picture.pictureFile) }}" height="120px"></td>
                 <td><a href="{{ path('admin_picture_show', {'id': picture.id}) }}"><i class="bi bi-eye-fill"></i></a></td>
                 <td><a href="{{ path('admin_picture_edit', {'id': picture.id}) }}"><i class="bi bi-pencil-square"></i></a></td>
             </tr>

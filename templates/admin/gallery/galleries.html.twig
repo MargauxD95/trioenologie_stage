@@ -11,12 +11,8 @@
     <table class="table tab">
         <thead class="tab">
             <tr class="tab">
-                <th>Id</th>
-                <th>Name</th>                
-                <th>Description</th>
-                <th>Composée de</th>
-                <th>Créée le</th>
-                <th>IsVisible</th>
+                <th>ID</th>
+                <th>Nom de la galerie</th>
                 <th>Détails</th>
                 <th>Modifier</th>
             </tr>
@@ -25,17 +21,7 @@
         {% for gallery in galleries %}
             <tr class="tab">
                 <td class="rFb">{{ gallery.id }}</td>
-                <td>{{ gallery.name }}</td> 
-                <td>{{ gallery.description }}</td>  
-                <td class="text-center">
-                    {% if gallery.pictures.count >1 %}                    
-                        {{gallery.pictures.count}} photos
-                    {% else %}
-                        {{gallery.pictures.count}} photo
-                    {% endif %}
-                </td>
-                <td class="text-center">{{ gallery.createdAt ? gallery.createdAt|date('d-m-Y H:i') : '' }}</td>
-                <td class="text-center">{{ gallery.isVisible ? 'Oui' : 'Non' }}</td>                
+                <td>{{ gallery.name }}</td>                
                 <td class="text-center">
                     <a href="{{ path('admin_gallery_show', {'id': gallery.id}) }}"><i class="bi bi-eye-fill"></i></a>
                 </td>
@@ -45,7 +31,7 @@
             </tr>
         {% else %}
             <tr>
-                <td colspan="8">no records found</td>
+                <td colspan="8">Aucun résultat</td>
             </tr>
         {% endfor %}
         </tbody>
