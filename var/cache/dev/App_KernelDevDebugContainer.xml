@@ -24,6 +24,7 @@
       <parameter key="SymfonyCastsResetPasswordBundle">SymfonyCasts\Bundle\ResetPassword\SymfonyCastsResetPasswordBundle</parameter>
       <parameter key="CalendarBundle">CalendarBundle\CalendarBundle</parameter>
       <parameter key="WebpackEncoreBundle">Symfony\WebpackEncoreBundle\WebpackEncoreBundle</parameter>
+      <parameter key="KarserRecaptcha3Bundle">Karser\Recaptcha3Bundle\KarserRecaptcha3Bundle</parameter>
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
@@ -85,6 +86,10 @@
       <parameter key="WebpackEncoreBundle" type="collection">
         <parameter key="path">C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\symfony\webpack-encore-bundle\src</parameter>
         <parameter key="namespace">Symfony\WebpackEncoreBundle</parameter>
+      </parameter>
+      <parameter key="KarserRecaptcha3Bundle" type="collection">
+        <parameter key="path">C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\karser\karser-recaptcha3-bundle</parameter>
+        <parameter key="namespace">Karser\Recaptcha3Bundle</parameter>
       </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
@@ -227,6 +232,7 @@
     <parameter key="env(VAR_DUMPER_SERVER)">127.0.0.1:9912</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
+      <parameter>@KarserRecaptcha3/Form/karser_recaptcha3_widget.html.twig</parameter>
       <parameter>bootstrap_5_layout.html.twig</parameter>
     </parameter>
     <parameter key="twig.default_path">C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage/templates</parameter>
@@ -266,6 +272,11 @@
         </parameter>
       </parameter>
     </parameter>
+    <parameter key="karser_recaptcha3.site_key">%env(RECAPTCHA3_KEY)%</parameter>
+    <parameter key="karser_recaptcha3.secret_key">%env(RECAPTCHA3_SECRET)%</parameter>
+    <parameter key="karser_recaptcha3.score_threshold">0.5</parameter>
+    <parameter key="karser_recaptcha3.enabled">true</parameter>
+    <parameter key="karser_recaptcha3.host">www.google.com</parameter>
     <parameter key="data_collector.templates" type="collection">
       <parameter key="data_collector.request" type="collection">
         <parameter>request</parameter>
@@ -1407,6 +1418,7 @@
         <argument>App\Form\Admin</argument>
         <argument>App\Form</argument>
         <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
+        <argument>Karser\Recaptcha3Bundle\Form</argument>
       </argument>
       <argument type="collection">
         <argument>App\Form\Admin\AdminProfileType</argument>
@@ -1429,6 +1441,7 @@
         <argument>Symfony\Component\Form\Extension\Core\Type\FileType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\ColorType</argument>
         <argument>Symfony\Bridge\Doctrine\Form\Type\EntityType</argument>
+        <argument>Karser\Recaptcha3Bundle\Form\Recaptcha3Type</argument>
       </argument>
       <argument type="collection">
         <argument>Symfony\Component\Form\Extension\Core\Type\TransformationFailureExtension</argument>
@@ -2209,6 +2222,7 @@
           <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\sensio\framework-extra-bundle\src/translations</argument>
           <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\tattali\calendar-bundle\src/translations</argument>
           <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\symfony\webpack-encore-bundle\src/translations</argument>
+          <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\karser\karser-recaptcha3-bundle/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
@@ -2231,6 +2245,7 @@
             <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\sensio\framework-extra-bundle\src/translations</argument>
             <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\tattali\calendar-bundle\src/translations</argument>
             <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\symfony\webpack-encore-bundle\src/translations</argument>
+            <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\karser\karser-recaptcha3-bundle/translations</argument>
           </argument>
         </argument>
       </argument>
@@ -3496,7 +3511,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.DPnw9c6"/>
+      <argument type="service" id=".service_locator.OVMzVxk"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -3637,7 +3652,7 @@
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory">
-      <argument type="service" id=".service_locator.19_mNxd"/>
+      <argument type="service" id=".service_locator.sTIRclW"/>
     </service>
     <service id="validator.expression" class="Symfony\Component\Validator\Constraints\ExpressionValidator">
       <tag name="validator.constraint_validator" alias="validator.expression"/>
@@ -5174,6 +5189,14 @@
         <argument>!Calendar</argument>
       </call>
       <call method="addPath">
+        <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\karser\karser-recaptcha3-bundle/Resources/views</argument>
+        <argument>KarserRecaptcha3</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage\vendor\karser\karser-recaptcha3-bundle/Resources/views</argument>
+        <argument>!KarserRecaptcha3</argument>
+      </call>
+      <call method="addPath">
         <argument>C:\Users\magau\OneDrive\Documents\GitHub\trioenologie_stage/templates</argument>
       </call>
       <call method="addPath">
@@ -6641,6 +6664,36 @@
         <argument key="_default" type="service_closure" id="webpack_encore.entrypoint_lookup[_default]"/>
       </argument>
     </service>
+    <service id="karser_recaptcha3.host_provider" class="Karser\Recaptcha3Bundle\Services\HostProvider">
+      <argument>www.google.com</argument>
+    </service>
+    <service id="karser_recaptcha3.form.type" class="Karser\Recaptcha3Bundle\Form\Recaptcha3Type">
+      <tag name="form.type"/>
+      <argument>%env(RECAPTCHA3_KEY)%</argument>
+      <argument>www.google.com</argument>
+      <argument>true</argument>
+    </service>
+    <service id="karser_recaptcha3.validator" class="Karser\Recaptcha3Bundle\Validator\Constraints\Recaptcha3Validator">
+      <tag name="validator.constraint_validator" alias="karser_recaptcha3_validator"/>
+      <argument type="service" id="karser_recaptcha3.google.recaptcha"/>
+      <argument>true</argument>
+      <argument type="service" id="karser_recaptcha3.ip_resolver"/>
+    </service>
+    <service id="karser_recaptcha3.ip_resolver" class="Karser\Recaptcha3Bundle\Services\IpResolver">
+      <argument type="service" id="request_stack"/>
+    </service>
+    <service id="karser_recaptcha3.google.recaptcha" class="ReCaptcha\ReCaptcha">
+      <argument>%env(RECAPTCHA3_SECRET)%</argument>
+      <argument type="service" id="karser_recaptcha3.google.request_method.curl_post"/>
+      <call method="setScoreThreshold">
+        <argument>0.5</argument>
+      </call>
+    </service>
+    <service id="karser_recaptcha3.google.request_method.curl_post" class="ReCaptcha\RequestMethod\CurlPost">
+      <argument type="service" id="karser_recaptcha3.google.request_method.curl"/>
+      <argument type="expression">service('karser_recaptcha3.host_provider').getVerifyUrl()</argument>
+    </service>
+    <service id="karser_recaptcha3.google.request_method.curl" class="ReCaptcha\RequestMethod\Curl"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Admin\AdminArticleController" class="App\Controller\Admin\AdminArticleController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Admin\AdminArticleController" class="App\Controller\Admin\AdminArticleController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Admin\AdminArticleController" class="App\Controller\Admin\AdminArticleController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -7548,15 +7601,17 @@
         <argument key="kernel:terminate" type="service_closure" id=".service_locator.bRdave9"/>
       </argument>
     </service>
-    <service id=".service_locator.19_mNxd" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.sTIRclW" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="Karser\Recaptcha3Bundle\Validator\Constraints\Recaptcha3Validator" type="service_closure" id="karser_recaptcha3.validator"/>
         <argument key="Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntityValidator" type="service_closure" id="doctrine.orm.validator.unique"/>
         <argument key="Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator" type="service_closure" id="security.validator.user_password"/>
         <argument key="Symfony\Component\Validator\Constraints\EmailValidator" type="service_closure" id="validator.email"/>
         <argument key="Symfony\Component\Validator\Constraints\ExpressionValidator" type="service_closure" id="validator.expression"/>
         <argument key="Symfony\Component\Validator\Constraints\NotCompromisedPasswordValidator" type="service_closure" id="validator.not_compromised_password"/>
         <argument key="doctrine.orm.validator.unique" type="service_closure" id="doctrine.orm.validator.unique"/>
+        <argument key="karser_recaptcha3_validator" type="service_closure" id="karser_recaptcha3.validator"/>
         <argument key="security.validator.user_password" type="service_closure" id="security.validator.user_password"/>
         <argument key="validator.expression" type="service_closure" id="validator.expression"/>
       </argument>
@@ -7712,7 +7767,7 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.DPnw9c6" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.OVMzVxk" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Form\Admin\AdminProfileType" type="service_closure" id="App\Form\Admin\AdminProfileType"/>
@@ -7730,6 +7785,7 @@
         <argument key="App\Form\ProfileType" type="service_closure" id="App\Form\ProfileType"/>
         <argument key="App\Form\RegistrationFormType" type="service_closure" id="App\Form\RegistrationFormType"/>
         <argument key="App\Form\ResetPasswordRequestFormType" type="service_closure" id="App\Form\ResetPasswordRequestFormType"/>
+        <argument key="Karser\Recaptcha3Bundle\Form\Recaptcha3Type" type="service_closure" id="karser_recaptcha3.form.type"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service_closure" id="form.type.entity"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType" type="service_closure" id="form.type.choice"/>
         <argument key="Symfony\Component\Form\Extension\Core\Type\ColorType" type="service_closure" id="form.type.color"/>
@@ -9441,6 +9497,8 @@
     <service id="SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface" alias="symfonycasts.reset_password.helper"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupCollectionInterface" alias="webpack_encore.entrypoint_lookup_collection"/>
     <service id="Symfony\WebpackEncoreBundle\Asset\EntrypointLookupInterface" alias="webpack_encore.entrypoint_lookup[_default]"/>
+    <service id="Karser\Recaptcha3Bundle\Validator\Constraints\Recaptcha3Validator" alias="karser_recaptcha3.validator"/>
+    <service id="karser_recaptcha3.google.request_method" alias="karser_recaptcha3.google.request_method.curl_post"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
     <service id="argument_resolver.controller_locator" alias=".service_locator.YKwdNLe"/>
@@ -9477,8 +9535,8 @@
     <service id=".service_locator.HzPMmnp" alias=".service_locator.rOnOmL."/>
     <service id=".service_locator.riGN6sa" alias=".service_locator.YU8H6ve"/>
     <service id=".service_locator.o5b_j1I" alias=".service_locator.YKwdNLe"/>
-    <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
-    <service id=".service_locator.xdE5_e5" alias=".service_locator.DPnw9c6"/>
+    <service id=".service_locator.olGN41B" alias=".service_locator.sTIRclW"/>
+    <service id=".service_locator.DNI2tWW" alias=".service_locator.OVMzVxk"/>
     <service id=".service_locator.XW18Svm" alias=".service_locator.TcKhdzh"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator._eRAkJb" alias=".service_locator.jIxfAsi"/>

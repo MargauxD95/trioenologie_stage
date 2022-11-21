@@ -1,11 +1,13 @@
 <?php
 namespace App\Form;
 use Symfony\Component\Form\AbstractType;
+use Karser\Recaptcha3Bundle\Form\Recaptcha3Type;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Karser\Recaptcha3Bundle\Validator\Constraints\Recaptcha3;
 
 class ContactType extends AbstractType
 {
@@ -38,6 +40,10 @@ class ContactType extends AbstractType
                     'rows' => 6,
                     'class' => 'form-control'
             ],
+            ])
+            ->add('captcha', Recaptcha3Type::class, [
+                'constraints' => new Recaptcha3(),
+                'action_name' => 'contact',
             ])
         ;
     }

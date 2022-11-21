@@ -58,7 +58,9 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
         gtag('config', 'G-22ZPMMWBG9');
         </script>
-
+        ";
+        // line 16
+        echo "
         <meta charset=\"UTF-8\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -66,12 +68,12 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
 
         <title>";
-        // line 22
+        // line 23
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
 
         ";
-        // line 25
+        // line 26
         echo "        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/favicon/apple-touch-icon.png\">
         <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon/favicon-32x32.png\">
         <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon/favicon-16x16.png\">
@@ -80,65 +82,65 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
         <meta name=\"msapplication-TileColor\" content=\"#da532c\">
         <meta name=\"theme-color\" content=\"#ffffff\">
         ";
-        // line 33
+        // line 34
         echo "
         ";
-        // line 35
+        // line 36
         echo "
         ";
-        // line 37
+        // line 38
         echo "
         <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
         <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
         <link href=\"https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Libre+Bodoni:ital@0;1&display=swap\" rel=\"stylesheet\">
 
         ";
-        // line 43
+        // line 44
         echo "
         <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
         <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
         <link href=\"https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap\" rel=\"stylesheet\">
 
         ";
-        // line 49
+        // line 50
         echo "        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
         <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
         <link href=\"https://fonts.googleapis.com/css2?family=Square+Peg&display=swap\" rel=\"stylesheet\">
 
         ";
-        // line 54
+        // line 55
         echo "        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
         <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
         <link href=\"https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap\" rel=\"stylesheet\">
 
         ";
-        // line 59
+        // line 60
         echo "        <!-- CSS only BOOTSTRAP -->
         <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx\" crossorigin=\"anonymous\">
         ";
-        // line 62
+        // line 63
         echo "        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css\">
         <!-- CSS du dossier assets -->
         <link rel=\"stylesheet\" href=\"";
-        // line 64
+        // line 65
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/style.css"), "html", null, true);
         echo "\">
 
 
         ";
-        // line 68
+        // line 69
         echo "
         <!-- JavaScript Bundle with Popper -->
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa\" crossorigin=\"anonymous\"></script>
         ";
-        // line 72
+        // line 73
         echo "        <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\" integrity=\"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=\" crossorigin=\"anonymous\"></script>
         
 
         ";
-        // line 75
-        $this->displayBlock('stylesheets', $context, $blocks);
         // line 76
+        $this->displayBlock('stylesheets', $context, $blocks);
+        // line 77
         echo "
     </head>
 
@@ -146,32 +148,32 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
 
         ";
-        // line 82
-        $this->loadTemplate("main/partials/nav.html.twig", "base.html.twig", 82)->display($context);
         // line 83
-        echo "        ";
-        $this->loadTemplate("main/partials/flashes.html.twig", "base.html.twig", 83)->display($context);
+        $this->loadTemplate("main/partials/nav.html.twig", "base.html.twig", 83)->display($context);
         // line 84
+        echo "        ";
+        $this->loadTemplate("main/partials/flashes.html.twig", "base.html.twig", 84)->display($context);
+        // line 85
         echo "            
         ";
-        // line 85
+        // line 86
         $this->displayBlock('body', $context, $blocks);
-        // line 87
+        // line 88
         echo "        
 
         ";
-        // line 89
-        $this->loadTemplate("main/partials/footer/footer.html.twig", "base.html.twig", 89)->display($context);
         // line 90
+        $this->loadTemplate("main/partials/footer/footer.html.twig", "base.html.twig", 90)->display($context);
+        // line 91
         echo "
 
         
 
        
         ";
-        // line 95
-        $this->displayBlock('javascripts', $context, $blocks);
         // line 96
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 97
         echo "    </body>
 </html>
 ";
@@ -183,7 +185,7 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
     }
 
-    // line 22
+    // line 23
     public function block_title($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -202,7 +204,7 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
     }
 
-    // line 75
+    // line 76
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -220,7 +222,7 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
     }
 
-    // line 85
+    // line 86
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -241,7 +243,7 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
     }
 
-    // line 95
+    // line 96
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -271,7 +273,7 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
     public function getDebugInfo()
     {
-        return array (  245 => 95,  224 => 85,  206 => 75,  187 => 22,  175 => 96,  173 => 95,  166 => 90,  164 => 89,  160 => 87,  158 => 85,  155 => 84,  152 => 83,  150 => 82,  142 => 76,  140 => 75,  135 => 72,  130 => 68,  124 => 64,  120 => 62,  116 => 59,  110 => 54,  104 => 49,  97 => 43,  90 => 37,  87 => 35,  84 => 33,  75 => 25,  70 => 22,  47 => 1,);
+        return array (  247 => 96,  226 => 86,  208 => 76,  189 => 23,  177 => 97,  175 => 96,  168 => 91,  166 => 90,  162 => 88,  160 => 86,  157 => 85,  154 => 84,  152 => 83,  144 => 77,  142 => 76,  137 => 73,  132 => 69,  126 => 65,  122 => 63,  118 => 60,  112 => 55,  106 => 50,  99 => 44,  92 => 38,  89 => 36,  86 => 34,  77 => 26,  72 => 23,  63 => 16,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -290,6 +292,7 @@ class __TwigTemplate_19b21ab1f7d507fdf00cda224291e582 extends Template
 
         gtag('config', 'G-22ZPMMWBG9');
         </script>
+        {# FIN GOOGLE ANALYTICS #}
 
         <meta charset=\"UTF-8\">
         <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">

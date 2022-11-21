@@ -100,11 +100,6 @@ class __TwigTemplate_aedeeb92bd5ad7523766c013dc25826a extends Template
 
 </div>
 
-    <h4>Code de l'erreur : ";
-        // line 21
-        echo twig_escape_filter($this->env, (isset($context["status_code"]) || array_key_exists("status_code", $context) ? $context["status_code"] : (function () { throw new RuntimeError('Variable "status_code" does not exist.', 21, $this->source); })()), "html", null, true);
-        echo "</h4>
-
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -126,7 +121,7 @@ class __TwigTemplate_aedeeb92bd5ad7523766c013dc25826a extends Template
 
     public function getDebugInfo()
     {
-        return array (  105 => 21,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -150,8 +145,6 @@ class __TwigTemplate_aedeeb92bd5ad7523766c013dc25826a extends Template
     </div>
 
 </div>
-
-    <h4>Code de l'erreur : {{ status_code }}</h4>
 
 {% endblock %}
 ", "@Twig/Exception/error404.html.twig", "C:\\Users\\magau\\OneDrive\\Documents\\GitHub\\trioenologie_stage\\templates\\bundles\\TwigBundle\\Exception\\error404.html.twig");
