@@ -45,7 +45,7 @@ class __TwigTemplate_9a43639c5f45992c5e7f5ae927c7564e extends Template
         <a class=\"navbar-brand\" id=\"brand\" href=\"";
         // line 3
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
-        echo "\"><img src=\"/assets/imagesTrioenologie/lettrage-nav.png\" alt=\"Logo de l'association Trioenologie qui représente un verre de vin de couleur rose aux contours blanc avec un smiley et la typographie de l'association à gauche du logo.\" class=\"imgNav\"></a>
+        echo "\"><img src=\"/assets/imagesTrioenologie/logo-nav.png\" alt=\"Logo de l'association Trioenologie qui représente un verre de vin de couleur rose aux contours blanc avec un smiley et la typographie de l'association à gauche du logo.\" class=\"imgNav\"></a>
         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
         </button>
@@ -227,7 +227,7 @@ class __TwigTemplate_9a43639c5f45992c5e7f5ae927c7564e extends Template
     {
         return new Source("<nav class=\"navbar navbar-expand-lg shadow\">
     <div class=\"container-fluid\" id=\"container1\">
-        <a class=\"navbar-brand\" id=\"brand\" href=\"{{ path('home') }}\"><img src=\"/assets/imagesTrioenologie/lettrage-nav.png\" alt=\"Logo de l'association Trioenologie qui représente un verre de vin de couleur rose aux contours blanc avec un smiley et la typographie de l'association à gauche du logo.\" class=\"imgNav\"></a>
+        <a class=\"navbar-brand\" id=\"brand\" href=\"{{ path('home') }}\"><img src=\"/assets/imagesTrioenologie/logo-nav.png\" alt=\"Logo de l'association Trioenologie qui représente un verre de vin de couleur rose aux contours blanc avec un smiley et la typographie de l'association à gauche du logo.\" class=\"imgNav\"></a>
         <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
             <span class=\"navbar-toggler-icon\"></span>
         </button>

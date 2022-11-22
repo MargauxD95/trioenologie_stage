@@ -27,14 +27,14 @@
 
 /* Background barre de navigation */
 .navbar{
-    background-color: #f8c7cc;
+    background-color: #7b0539;
 }
 
 /* Modification liens barre de navigation */
 .navbar a {
     font-family: 'Square Peg';
     font-size: 2rem;
-    color: #7b0539 !important;
+    color: #f8c7cc !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
@@ -63,12 +63,12 @@
 
 .navbar-toggler{
     margin-right: 2.5rem;
-    color: #7b0539 ;
-    border: rgb(123, 5, 57) solid;
+    color: #f8c7cc ;
+    border: rgb(248, 199, 204) solid;
 }
 
 .navbar-toggler-icon{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(123, 5, 57)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(248, 199, 204)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
 }
 
 /* Menu de droite */
@@ -534,7 +534,7 @@ h1.profil, h2.profil{
     padding-bottom: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    background-color: rgba(209, 142, 149, 0.8);
+    background-color: rgba(246, 184, 191, 0.3);
     border-radius: 12.5px;
 }
 
@@ -605,7 +605,7 @@ h1.profil, h2.profil{
 
 footer { 
     width: 100%; 
-    background-color: #f8c7cc; 
+    background-color: #7b0539; 
     font-family: 'Square Peg';
     font-size: 1.4rem;
     color: #eea1aa !important;
@@ -616,7 +616,7 @@ footer {
     font-family: 'Square Peg';
     font-size: 2rem;
     text-decoration: none;
-    color: #7b0539 !important;
+    color: #f8c7cc !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
 }
@@ -633,7 +633,7 @@ img.imgFooter{
 }
 
 i.bi-facebook {
-    color: #7b0539;
+    color: #f8c7cc;
     font-size: 2rem;
 }
 
@@ -696,7 +696,7 @@ img#banniere{
 .contact {    
     margin-top: 30px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    background-color: rgba(246, 184, 191, 0.5);
+    background-color: rgba(209, 142, 149, 0.8);
     border-radius: 15px;
     padding-top: 0.5rem;
     margin-right: 2.8rem;
