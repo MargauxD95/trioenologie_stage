@@ -86,7 +86,7 @@ class AdminGalleryController extends AbstractController
             $entityManager->flush();
             $galleryRepository->add($gallery, true);
 
-            return $this->redirectToRoute('admin/gallery/galleries.html.twig', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('admin_gallery_index', [], Response::HTTP_SEE_OTHER);
         } //EO If form isSubmitted
 
         return $this->renderForm('admin/gallery/newGallery.html.twig', [
